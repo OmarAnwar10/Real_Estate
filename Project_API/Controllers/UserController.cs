@@ -2,6 +2,7 @@
 using Application.ServiceContracts;
 using API_Project.DataAccess.DTOs;
 using System.Collections.Generic;
+using API_Project.DataAccess.DTOs_Models;
 
 namespace API_Project.Controllers
 {
@@ -37,7 +38,7 @@ namespace API_Project.Controllers
 
         // Create a new user
         [HttpPost]
-        public IActionResult CreateUser([FromBody] UserDto userDto)
+        public IActionResult CreateUser([FromBody] UserWithOutIdDto userDto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -48,12 +49,12 @@ namespace API_Project.Controllers
 
         // Update an existing user
         [HttpPut("{id}")]
-        public IActionResult UpdateUser(int id, [FromBody] UserDto userDto)
+        public IActionResult UpdateUser(int id, [FromBody] UserWithOutIdDto userDto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            _userService.UpdateUser(userDto);
+            _userService.UpdateUser(id, userDto);
             return Ok("User updated successfully.");
         }
 
@@ -71,7 +72,7 @@ namespace API_Project.Controllers
         {
             try
             {
-                var user = _userService.AuthenticateUser(email, email);
+                var user = _userService.AuthenticateUser(email, password);
                 return Ok(user);
             }
             catch (UnauthorizedAccessException)

@@ -2,11 +2,12 @@
 using application.DataAccess.Models;
 using Application.ServiceContracts;
 using API_Project.DataAccess.Models;
+using API_Project.DataAccess.DTOs_Models;
 
 
 namespace API_Project.DataAccess.DTOs
 {
-  
+
     public class MappingProfile : Profile
     {
         public MappingProfile()
@@ -25,6 +26,10 @@ namespace API_Project.DataAccess.DTOs
             CreateMap<FavoriteDto, Favorite>();
             CreateMap<Amenities, AmenitiesDto>();
             CreateMap<AmenitiesDto, Amenities>();
+
+            CreateMap<User, UserWithOutIdDto>();
+            CreateMap<UserWithOutIdDto, User>();
+
 
         }
     }
