@@ -31,7 +31,7 @@ namespace API_Project.Controllers
             var property = _propertyService.GetPropertyById(id);
             if (property == null)
                 return NotFound("Property not found.");
-
+            
             return Ok(property);
         }
 

@@ -9,6 +9,7 @@ namespace API_Project.DataAccess.DTOs
         public string Description { get; set; }
         public decimal Price { get; set; }
         public string Location { get; set; }
+        public string City { get; set; }
         public double Area { get; set; }
         public string PropertyType { get; set; }
         public int Bedrooms { get; set; }
@@ -17,7 +18,9 @@ namespace API_Project.DataAccess.DTOs
         public int YearBuilt { get; set; }
         public Status Status { get; set; }
         public AmenitiesDto Amenities { get; set; }
-        public UserDto Owner { get; set; }
+        public int UserId { get; set; }
+
+        //public UserDto Owner { get; set; }
         public List<string> Images { get; set; }
     }
     public class AmenitiesDto

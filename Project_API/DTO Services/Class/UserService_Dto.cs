@@ -144,17 +144,19 @@ namespace Application.Services
         {
             try
             {
-                var properties = _unitOfWork.Property.GetAll()
-                    .Where(p => p.OwnerId == userId)
-                    .ToList();
-                return _mapper.Map<IEnumerable<PropertyDto>>(properties);
+                // استعلام بسيط
+                var properties = _unitOfWork.Property.GetAll();
+                var filteredProperties = properties.Where(p => p.OwnerId == userId).ToList();
+
+                return _mapper.Map<IEnumerable<PropertyDto>>(filteredProperties);
             }
             catch (Exception ex)
             {
-                // Log exception here
+                // سجل الاستثناء
                 throw new ApplicationException("An error occurred while retrieving user's properties.", ex);
             }
         }
+
 
         public IEnumerable<InquiryDto> GetUserInquiries(int userId)
         {

@@ -27,6 +27,7 @@ namespace application.DataAccess.Models
         [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; } // سعر العقار
         public string Location { get; set; } // موقع العقار
+        public string City { get; set; } 
         public double Area { get; set; } // مساحة العقار بالمتر المربع
         public string PropertyType { get; set; } // نوع العقار (شقة، فيلا، مكتب، إلخ)
         [Required]
