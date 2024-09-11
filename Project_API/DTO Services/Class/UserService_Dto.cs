@@ -142,13 +142,13 @@ namespace Application.Services
             }
         }
 
-        public IEnumerable<PropertyDto> GetUserProperties(int userId)/////error
+        public IEnumerable<PropertyDto> GetUserProperties(int userId)
         {
             try
             {
                 // تأكد من استخدام IQueryable
                 var properties = _unitOfWork.Property.GetAll();
-                var filteredProperties = properties.Where(p => p.OwnerId == userId).ToList();
+                var filteredProperties = properties.Where(p => p.OwnerId == userId).ToList(); // هذا يحولها إلى List
 
                 return _mapper.Map<IEnumerable<PropertyDto>>(filteredProperties);
             }
@@ -159,8 +159,7 @@ namespace Application.Services
             }
         }
 
-
-        public IEnumerable<InquiryDto> GetUserInquiries(int userId)
+        public IEnumerable<InquiryDto> GetUserInquiries(int userId)////////needDto
         {
             try
             {

@@ -258,7 +258,6 @@ namespace Application.Services
         }
 
         // Private method to validate property data
-
         private void ValidatePropertyDto(PropertyDto propertyDto)
         {
             if (propertyDto == null)
@@ -278,8 +277,6 @@ namespace Application.Services
 
             // Add any additional validations as needed
         }
-
-
 
         private void ValidatePropertyDto(PropertywithAmenitiesDto propertyDto)
         {

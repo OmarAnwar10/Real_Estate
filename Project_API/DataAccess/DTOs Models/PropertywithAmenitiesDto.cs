@@ -4,6 +4,7 @@ namespace API_Project.DataAccess.DTOs_Models
 {
     public class PropertywithAmenitiesDto
     {
+        public int OwnerId { get; set; }
         //public int AmenitiesId { get; set; }
 
         public string Title { get; set; }
@@ -20,7 +21,7 @@ namespace API_Project.DataAccess.DTOs_Models
         public Status Status { get; set; }
         public List<string> Images { get; set; }
 
-        
+
         public bool HasGarage { get; set; }
         public bool Two_Stories { get; set; }
         public bool Laundry_Room { get; set; }

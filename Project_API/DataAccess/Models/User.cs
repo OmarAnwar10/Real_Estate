@@ -35,8 +35,6 @@ namespace application.DataAccess.Models
         //}
 
 
-
-        //public string Role { get; set; } // دور المستخدم (بائع، مشتري، مدير)
         public string? Address { get; set; } // عنوان المستخدم
         public string ProfilePicture { get; set; } // صورة الملف الشخصي
         //public string UserType { get; set; } // نوع المستخدم (بائع، مشتري، وكيل، مدير)
@@ -45,9 +43,7 @@ namespace application.DataAccess.Models
         public virtual IEnumerable<Property> Properties { get; set; } // العقارات التي يمتلكها المستخدم
         public IEnumerable<Inquiry> Inquiries { get; set; } // الاستفسارات المرسلة من قبل المستخدم
 
-        //public ICollection<Review> Reviews { get; set; } // المراجعات التي كتبها المستخدم
-        //public ICollection<Transaction> BuyerTransactions { get; set; } // المعاملات التي قام بها المستخدم كمشتري
-        //public ICollection<Transaction> SellerTransactions { get; set; } // المعاملات التي قام بها المستخدم كبائع
+        
     }
 
 
