@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace application.DataAccess
 {
-    
+
 
 
     public class AppDbContext : DbContext
@@ -61,7 +61,7 @@ namespace application.DataAccess
 
             var Entities = from e in ChangeTracker.Entries()
                            where e.State == EntityState.Modified ||
-                           e.State == EntityState.Added 
+                           e.State == EntityState.Added
                            select e.Entity;
 
             foreach (var Entity in Entities)

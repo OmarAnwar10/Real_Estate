@@ -159,11 +159,6 @@ namespace Application.Services
             }
         }
 
-
-
-
-
-
         public IEnumerable<InquiryDto> GetUserInquiries(int userId)////////needDto
         {
             try

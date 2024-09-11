@@ -135,7 +135,7 @@ namespace Application.Services
                 throw new ApplicationException("حدث خطأ أثناء تحديث الاستفسار.", ex);
             }
         }
-                
+
         public void DeleteInquiry(int id)
         {
             if (id <= 0)
@@ -180,7 +180,6 @@ namespace Application.Services
             }
         }
 
-
         private void ValidateInquiryDto(InquiryDto inquiryDto)
         {
             if (inquiryDto == null)
@@ -188,7 +187,7 @@ namespace Application.Services
 
             if (string.IsNullOrEmpty(inquiryDto.Message))
                 throw new ArgumentException("Property title is required.", nameof(inquiryDto.Message));
-                        
+
         }
 
     }

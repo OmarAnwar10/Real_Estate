@@ -13,7 +13,6 @@ namespace Application.ServiceContracts
         void UpdateUser(int id, UserWithOutIdDto userDto); // تحديث مستخدم موجود
         void DeleteUser(int id); // حذف مستخدم بناءً على المعرف
         UserDto AuthenticateUser(string email, string password); // التحقق من صحة تسجيل دخول المستخدم
-
         IEnumerable<PropertyDto> GetUserProperties(int userId); // الحصول على العقارات التي يمتلكها مستخدم معين
         IEnumerable<InquiryDto> GetUserInquiries(int userId); // الحصول على الاستفسارات المرسلة من قبل مستخدم معين
         IEnumerable<FavoriteDto> GetUserFavorites(int userId); // الحصول على العقارات المفضلة لمستخدم معين

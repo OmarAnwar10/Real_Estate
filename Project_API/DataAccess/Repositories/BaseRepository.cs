@@ -19,8 +19,6 @@ namespace API_Project.DataAccess.Repositories
             return _dbSet.AsQueryable(); // تأكد من أنها IQueryable
         }
 
-
-
         public TEntity Get(int id)
         {
             return _dbSet.Find(id);
@@ -30,9 +28,6 @@ namespace API_Project.DataAccess.Repositories
         {
             _dbSet.Add(entity);
         }
-
-
-
 
         public void Update(TEntity entity)
         {
@@ -72,11 +67,6 @@ namespace API_Project.DataAccess.Repositories
 
             return (int)idProperty.GetValue(entity);
         }
-
-
-
-
-
 
         public void Delete(int id)
         {
