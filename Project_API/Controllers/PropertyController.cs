@@ -33,7 +33,7 @@ namespace API_Project.Controllers
             var property = _propertyService.GetPropertyById(id);
             if (property == null)
                 return NotFound("Property not found.");
-            
+
             return Ok(property);
         }
 
@@ -58,7 +58,7 @@ namespace API_Project.Controllers
             _propertyService.UpdateProperty(id, propertyDto);
             return Ok("Property updated successfully.");
         }
-           
+
         // Delete a property by ID
         [HttpDelete("{id}")]
         public IActionResult DeleteProperty(int id)

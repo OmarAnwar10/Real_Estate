@@ -180,6 +180,7 @@ namespace Application.Services
             }
         }
 
+
         private void ValidateInquiryDto(InquiryDto inquiryDto)
         {
             if (inquiryDto == null)

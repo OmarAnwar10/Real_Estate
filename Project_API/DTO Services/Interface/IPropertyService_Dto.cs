@@ -1,26 +1,19 @@
-﻿using application.DataAccess.Models;
-using System.Collections.Generic;
-
+﻿using API_Project.DataAccess.DTOs;
 using Application.ServiceContracts;
+using System;
 using System.Collections.Generic;
-using API_Project.DataAccess.DTOs;
-using API_Project.DataAccess.DTOs_Models;
 
 namespace Application.ServiceContracts
 {
-    public interface IPropertyService_Dto
+    public interface IInquiryService_Dto
     {
-        IEnumerable<PropertyDto> GetAllProperties(); // الحصول على جميع العقارات
-        PropertyDto GetPropertyById(int id); // الحصول على عقار بناءً على المعرف
-        void CreateProperty(PropertywithAmenitiesDto propertyDto); // إنشاء عقار جديد
-        void UpdateProperty(int id, PropertywithAmenitiesDto propertyDto); // تحديث عقار موجود
-        void DeleteProperty(int id); // حذف عقار بناءً على المعرف
-        IEnumerable<PropertyDto> GetPropertiesByPrice(decimal minPrice, decimal maxPrice); // الحصول على عقارات بناءً على نطاق السعر
-        IEnumerable<PropertyDto> SearchProperties(string searchTerm); // البحث عن العقارات بناءً على مصطلح بحث
-        IEnumerable<PropertyDto> FilterProperties(string location = null, string propertyType = null, int? minBedrooms = null, int? maxBedrooms = null, int? minBathrooms = null, int? maxBathrooms = null); // تصفية العقارات بناءً على معايير متعددة
-        IEnumerable<PropertyDto> GetPropertiesOrderedByPrice(bool ascending = true); // الحصول على عقارات مرتبة بناءً على السعر
-        IEnumerable<PropertyDto> GetPropertiesOrderedByDateAdded(bool ascending = true); // الحصول على عقارات مرتبة بناءً على تاريخ الإضافة
-        IEnumerable<PropertyDto> GetPropertiesByUserId(int userId); // الحصول على العقارات التي يمتلكها مستخدم معين
-        IEnumerable<PropertyDto> GetPropertiesOrderedByDate(); // الحصول على العقارات مرتبة حسب تاريخ الإضافة
+        IEnumerable<InquiryDto> GetAllInquiries(); // الحصول على جميع الاستفسارات
+        InquiryDto GetInquiryById(int id); // الحصول على استفسار بناءً على المعرف
+        IEnumerable<InquiryDto> GetInquiriesByUserId(int userId); // الحصول على استفسارات بناءً على معرف المستخدم
+        IEnumerable<InquiryDto> GetInquiriesByPropertyId(int propertyId); // الحصول على استفسارات بناءً على معرف العقار
+        void CreateInquiry(InquiryDto inquiryDto); // إنشاء استفسار جديد
+        void UpdateInquiry(int Id, InquiryDto inquiryDto); // تحديث استفسار موجود
+        void DeleteInquiry(int id); // حذف استفسار بناءً على المعرف
+        IEnumerable<InquiryDto> GetInquiriesByDateRange(DateTime startDate, DateTime endDate); // الحصول على الاستفسارات بناءً على النطاق الزمني
     }
 }
