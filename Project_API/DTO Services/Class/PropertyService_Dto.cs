@@ -60,6 +60,7 @@ namespace Application.Services
             try
             {
                 var property = _mapper.Map<Property>(propertyDto);
+                property.DateAdded = DateTime.Now;
                 _unitOfWork.Property.Insert(property);
                 _unitOfWork.Save();
             }

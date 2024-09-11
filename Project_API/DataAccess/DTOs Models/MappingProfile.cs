@@ -28,8 +28,8 @@ namespace API_Project.DataAccess.DTOs
             CreateMap<Amenities, AmenitiesDto>();
             CreateMap<AmenitiesDto, Amenities>();
 
-            //CreateMap<User, UserWithOutIdDto>();
-            //CreateMap<UserWithOutIdDto, User>();
+            CreateMap<User, UserWithOutIdDto>();
+            CreateMap<UserWithOutIdDto, User>();
 
             CreateMap<PropertywithAmenitiesDto, Property>()
                 .ForMember(dest => dest.Images, opt => opt.MapFrom(src => src.Images))

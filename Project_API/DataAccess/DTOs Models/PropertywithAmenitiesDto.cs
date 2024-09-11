@@ -16,7 +16,7 @@ namespace API_Project.DataAccess.DTOs_Models
         public string PropertyType { get; set; }
         public int Bedrooms { get; set; }
         public int Bathrooms { get; set; }
-        public DateTime DateAdded { get; set; }
+        //public DateTime DateAdded { get; set; }/////////////////////
         public int YearBuilt { get; set; }
         public Status Status { get; set; }
         public List<string> Images { get; set; }
