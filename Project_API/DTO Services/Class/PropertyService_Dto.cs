@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System;
 using API_Project.DataAccess.DTOs;
+using API_Project.DataAccess.DTOs_Models;
 
 namespace Application.Services
 {
@@ -52,7 +53,7 @@ namespace Application.Services
             }
         }
 
-        public void CreateProperty(PropertyDto propertyDto)
+        public void CreateProperty(PropertywithAmenitiesDto propertyDto)
         {
             ValidatePropertyDto(propertyDto);
 
@@ -69,19 +70,20 @@ namespace Application.Services
             }
         }
 
-        public void UpdateProperty(PropertyDto propertyDto)
+        public void UpdateProperty(int id, PropertywithAmenitiesDto propertyDto)
         {
             ValidatePropertyDto(propertyDto);
 
             try
             {
-                var existingProperty = _unitOfWork.Property.Get(propertyDto.Id);
+                var existingProperty = _unitOfWork.Property.Get(id);
                 if (existingProperty == null)
                 {
                     throw new KeyNotFoundException("Property not found.");
                 }
 
                 var property = _mapper.Map<Property>(propertyDto);
+                property.Id = id;
                 _unitOfWork.Property.Update(property);
                 _unitOfWork.Save();
             }
@@ -256,7 +258,30 @@ namespace Application.Services
         }
 
         // Private method to validate property data
+
         private void ValidatePropertyDto(PropertyDto propertyDto)
+        {
+            if (propertyDto == null)
+                throw new ArgumentNullException(nameof(propertyDto));
+
+            if (string.IsNullOrEmpty(propertyDto.Title))
+                throw new ArgumentException("Property title is required.", nameof(propertyDto.Title));
+
+            if (propertyDto.Price <= 0)
+                throw new ArgumentException("Property price must be greater than zero.", nameof(propertyDto.Price));
+
+            if (propertyDto.Bedrooms < 0)
+                throw new ArgumentException("Number of bedrooms cannot be negative.", nameof(propertyDto.Bedrooms));
+
+            if (propertyDto.Bathrooms < 0)
+                throw new ArgumentException("Number of bathrooms cannot be negative.", nameof(propertyDto.Bathrooms));
+
+            // Add any additional validations as needed
+        }
+
+
+
+        private void ValidatePropertyDto(PropertywithAmenitiesDto propertyDto)
         {
             if (propertyDto == null)
                 throw new ArgumentNullException(nameof(propertyDto));

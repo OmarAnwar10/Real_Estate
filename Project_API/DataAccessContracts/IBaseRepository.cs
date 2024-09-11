@@ -2,7 +2,7 @@
 {
   public interface IBaseRepository<TEntity>
   {
-    IEnumerable<TEntity> GetAll();
+    public IQueryable<TEntity> GetAll();
     TEntity Get(int id);
 
     void Insert(TEntity entity);

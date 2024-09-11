@@ -2,6 +2,8 @@
 using Application.ServiceContracts;
 using API_Project.DataAccess.DTOs;
 using System.Collections.Generic;
+using API_Project.DataAccess.DTOs_Models;
+using Application.Services;
 
 namespace API_Project.Controllers
 {
@@ -37,7 +39,7 @@ namespace API_Project.Controllers
 
         // Create a new property
         [HttpPost]
-        public IActionResult CreateProperty([FromBody] PropertyDto propertyDto)
+        public IActionResult CreateProperty([FromBody] PropertywithAmenitiesDto propertyDto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -48,15 +50,15 @@ namespace API_Project.Controllers
 
         // Update an existing property
         [HttpPut("{id}")]
-        public IActionResult UpdateProperty(int id, [FromBody] PropertyDto propertyDto)
+        public IActionResult UpdateProperty(int id, [FromBody] PropertywithAmenitiesDto propertyDto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            _propertyService.UpdateProperty(propertyDto);
+            _propertyService.UpdateProperty(id, propertyDto);
             return Ok("Property updated successfully.");
         }
-
+           
         // Delete a property by ID
         [HttpDelete("{id}")]
         public IActionResult DeleteProperty(int id)

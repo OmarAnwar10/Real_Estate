@@ -16,6 +16,8 @@ namespace application.DataAccess
         public DbSet<User> Users { get; set; }
         public DbSet<Inquiry> Inquiries { get; set; }
         public DbSet<Favorite> Favorites { get; set; }
+        public DbSet<Amenities> Amenities { get; set; }
+
 
 
 

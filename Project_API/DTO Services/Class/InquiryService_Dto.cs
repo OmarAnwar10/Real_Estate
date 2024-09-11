@@ -8,6 +8,7 @@ using System.Linq;
 using API_Project.DataAccess.DTOs;
 using API_Project.DataAccess.Models;
 using Application.DataAccessContracts;
+using API_Project.DataAccess.DTOs_Models;
 
 namespace Application.Services
 {
@@ -107,8 +108,10 @@ namespace Application.Services
             }
         }
 
-        public void UpdateInquiry(InquiryDto inquiryDto)
+        public void UpdateInquiry(int Id, InquiryDto inquiryDto)
         {
+            ValidateInquiryDto(inquiryDto);
+
             if (inquiryDto == null)
             {
                 throw new ArgumentNullException(nameof(inquiryDto), "الاستفسار لا يمكن أن يكون null.");
@@ -116,13 +119,14 @@ namespace Application.Services
 
             try
             {
-                var existingInquiry = _unitOfWork.Inquiry.Get(inquiryDto.Id);
+                var existingInquiry = _unitOfWork.Inquiry.Get(Id);
                 if (existingInquiry == null)
                 {
                     throw new KeyNotFoundException("الاستفسار غير موجود.");
                 }
 
                 var inquiry = _mapper.Map<Inquiry>(inquiryDto);
+                inquiry.Id = Id;
                 _unitOfWork.Inquiry.Update(inquiry);
                 _unitOfWork.Save();
             }
@@ -131,7 +135,7 @@ namespace Application.Services
                 throw new ApplicationException("حدث خطأ أثناء تحديث الاستفسار.", ex);
             }
         }
-
+                
         public void DeleteInquiry(int id)
         {
             if (id <= 0)
@@ -175,5 +179,17 @@ namespace Application.Services
                 throw new ApplicationException("حدث خطأ أثناء جلب الاستفسارات بناءً على النطاق الزمني.", ex);
             }
         }
+
+
+        private void ValidateInquiryDto(InquiryDto inquiryDto)
+        {
+            if (inquiryDto == null)
+                throw new ArgumentNullException(nameof(inquiryDto));
+
+            if (string.IsNullOrEmpty(inquiryDto.Message))
+                throw new ArgumentException("Property title is required.", nameof(inquiryDto.Message));
+                        
+        }
+
     }
 }

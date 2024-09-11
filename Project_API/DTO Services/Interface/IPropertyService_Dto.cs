@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Application.ServiceContracts;
 using System.Collections.Generic;
 using API_Project.DataAccess.DTOs;
+using API_Project.DataAccess.DTOs_Models;
 
 namespace Application.ServiceContracts
 {
@@ -11,8 +12,8 @@ namespace Application.ServiceContracts
     {
         IEnumerable<PropertyDto> GetAllProperties(); // الحصول على جميع العقارات
         PropertyDto GetPropertyById(int id); // الحصول على عقار بناءً على المعرف
-        void CreateProperty(PropertyDto propertyDto); // إنشاء عقار جديد
-        void UpdateProperty(PropertyDto propertyDto); // تحديث عقار موجود
+        void CreateProperty(PropertywithAmenitiesDto propertyDto); // إنشاء عقار جديد
+        void UpdateProperty(int id, PropertywithAmenitiesDto propertyDto); // تحديث عقار موجود
         void DeleteProperty(int id); // حذف عقار بناءً على المعرف
         IEnumerable<PropertyDto> GetPropertiesByPrice(decimal minPrice, decimal maxPrice); // الحصول على عقارات بناءً على نطاق السعر
         IEnumerable<PropertyDto> SearchProperties(string searchTerm); // البحث عن العقارات بناءً على مصطلح بحث

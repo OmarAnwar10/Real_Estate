@@ -6,6 +6,7 @@ namespace API_Project.DataAccess.DTOs
   public class PropertyDto
   {
     public int Id { get; set; }
+    public int OwnerId { get; set; }
     public string Title { get; set; }
     public string Description { get; set; }
     public decimal Price { get; set; }
@@ -19,11 +20,10 @@ namespace API_Project.DataAccess.DTOs
     public int YearBuilt { get; set; }
     public Status Status { get; set; }
     public AmenitiesDto Amenities { get; set; }
-    public int UserId { get; set; }
+    public List<string> Images { get; set; }
 
     public UserDto Owner { get; set; }
-    public List<string> Images { get; set; }
-    public IList<Inquiry> Inquiries { get; set; }
+    public ICollection<Inquiry> Inquiries { get; set; }
   }
   public class AmenitiesDto
   {

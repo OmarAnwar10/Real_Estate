@@ -42,8 +42,8 @@ namespace application.DataAccess.Models
         //public string UserType { get; set; } // نوع المستخدم (بائع، مشتري، وكيل، مدير)
 
         // العلاقات
-        public  virtual ICollection<Property> Properties { get; set; } // العقارات التي يمتلكها المستخدم
-        public ICollection<Inquiry> Inquiries { get; set; } // الاستفسارات المرسلة من قبل المستخدم
+        public  virtual IEnumerable<Property> Properties { get; set; } // العقارات التي يمتلكها المستخدم
+        public IEnumerable<Inquiry> Inquiries { get; set; } // الاستفسارات المرسلة من قبل المستخدم
         
         //public ICollection<Review> Reviews { get; set; } // المراجعات التي كتبها المستخدم
         //public ICollection<Transaction> BuyerTransactions { get; set; } // المعاملات التي قام بها المستخدم كمشتري

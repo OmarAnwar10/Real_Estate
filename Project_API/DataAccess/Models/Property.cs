@@ -34,7 +34,7 @@ namespace application.DataAccess.Models
     public int Bedrooms { get; set; } // عدد غرف النوم
     [Required]
     public int Bathrooms { get; set; } // عدد الحمامات
-    public IList<string> Images { get; set; } // روابط صور العقار
+    public List<string> Images { get; set; } // روابط صور العقار
     public DateTime DateAdded { get; set; } // تاريخ إضافة العقار
     public int YearBuilt { get; set; } // سنة بناء العقار
     [Required]
@@ -43,7 +43,7 @@ namespace application.DataAccess.Models
     public int? OwnerId { get; set; } // الرقم التعريفي لصاحب العقار (ممكن يكون null لو العقار مش متاح للبيع)
     public virtual User Owner { get; set; } // صاحب العقار
 
-    public IList<Inquiry> Inquiries { get; set; } // الاستفسارات المتعلقة بالعقار
+    public IEnumerable<Inquiry> Inquiries { get; set; } // الاستفسارات المتعلقة بالعقار
     public virtual Amenities Amenities { get; set; }
 
   }

@@ -14,10 +14,11 @@ namespace API_Project.DataAccess.Repositories
             _dbSet = _db.Set<TEntity>();
         }
 
-        public IEnumerable<TEntity> GetAll()
+        public IQueryable<TEntity> GetAll()
         {
-            return _dbSet.AsNoTracking().ToList(); // تأكد من أن _dbSet يتطابق مع النوع TEntity
+            return _dbSet.AsQueryable(); // تأكد من أنها IQueryable
         }
+
 
 
         public TEntity Get(int id)

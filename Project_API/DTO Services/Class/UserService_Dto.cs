@@ -6,6 +6,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System;
 using API_Project.DataAccess.DTOs;
+using API_Project.DataAccess.DTOs_Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using API_Project.DataAccess.Models;
 
 namespace Application.Services
 {
@@ -51,14 +55,12 @@ namespace Application.Services
                 throw new ApplicationException("An error occurred while retrieving the user.", ex);
             }
         }
-
-        public void CreateUser(UserDto userDto)
+        public void CreateUser(UserWithOutIdDto userWithOutIdDto)
         {
-            ValidateUserDto(userDto);
-
+            ValidateUserDto(userWithOutIdDto);
             try
             {
-                var user = _mapper.Map<User>(userDto);
+                var user = _mapper.Map<User>(userWithOutIdDto);
                 // Hash the password before saving
                 user.Password = HashPassword(user.Password);
                 _unitOfWork.User.Insert(user);
@@ -71,25 +73,25 @@ namespace Application.Services
             }
         }
 
-        public void UpdateUser(UserDto userDto)
+        public void UpdateUser(int id, UserWithOutIdDto userWithOutIdDto)
         {
-            ValidateUserDto(userDto);
-
+            ValidateUserDto(userWithOutIdDto);
             try
             {
-                var existingUser = _unitOfWork.User.Get(userDto.Id);
+                var existingUser = _unitOfWork.User.Get(id);
                 if (existingUser == null)
                 {
                     throw new KeyNotFoundException("User not found.");
                 }
 
                 // Optional: update password only if provided
-                if (!string.IsNullOrEmpty(userDto.Password))
+                if (!string.IsNullOrEmpty(userWithOutIdDto.Password))
                 {
-                    userDto.Password = HashPassword(userDto.Password);
+                    userWithOutIdDto.Password = HashPassword(userWithOutIdDto.Password);
                 }
 
-                var user = _mapper.Map<User>(userDto);
+                var user = _mapper.Map<User>(userWithOutIdDto);
+                user.Id = id;
                 _unitOfWork.User.Update(user);
                 _unitOfWork.Save();
             }
@@ -144,9 +146,9 @@ namespace Application.Services
         {
             try
             {
-                // استعلام بسيط
+                // تأكد من استخدام IQueryable
                 var properties = _unitOfWork.Property.GetAll();
-                var filteredProperties = properties.Where(p => p.OwnerId == userId).ToList();
+                var filteredProperties = properties.Where(p => p.OwnerId == userId).ToList(); // هذا يحولها إلى List
 
                 return _mapper.Map<IEnumerable<PropertyDto>>(filteredProperties);
             }
@@ -158,7 +160,11 @@ namespace Application.Services
         }
 
 
-        public IEnumerable<InquiryDto> GetUserInquiries(int userId)
+
+
+
+
+        public IEnumerable<InquiryDto> GetUserInquiries(int userId)////////needDto
         {
             try
             {
@@ -174,7 +180,7 @@ namespace Application.Services
             }
         }
 
-        public IEnumerable<FavoriteDto> GetUserFavorites(int userId)
+        public IEnumerable<FavoriteDto> GetUserFavorites(int userId)/////////needDto
         {
             try
             {
@@ -212,7 +218,7 @@ namespace Application.Services
         }
 
         // Private method to validate user data
-        private void ValidateUserDto(UserDto userDto)
+        private void ValidateUserDto(UserWithOutIdDto userDto)
         {
             if (userDto == null)
                 throw new ArgumentNullException(nameof(userDto));

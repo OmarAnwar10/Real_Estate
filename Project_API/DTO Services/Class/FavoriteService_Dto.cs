@@ -121,7 +121,10 @@ namespace Application.Services
         {
             try
             {
-                var favorites = GetFavoritesByUserId(userId);
+                var favorites = _unitOfWork.Favorite.GetAll()
+                   .Where(f => f.UserId == userId)
+                   .ToList();
+                                
                 foreach (var favorite in favorites)
                 {
                     _unitOfWork.Favorite.Delete(favorite.Id);

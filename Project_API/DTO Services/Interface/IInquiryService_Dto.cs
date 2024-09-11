@@ -12,7 +12,7 @@ namespace Application.ServiceContracts
         IEnumerable<InquiryDto> GetInquiriesByUserId(int userId); // الحصول على استفسارات بناءً على معرف المستخدم
         IEnumerable<InquiryDto> GetInquiriesByPropertyId(int propertyId); // الحصول على استفسارات بناءً على معرف العقار
         void CreateInquiry(InquiryDto inquiryDto); // إنشاء استفسار جديد
-        void UpdateInquiry(InquiryDto inquiryDto); // تحديث استفسار موجود
+        void UpdateInquiry(int Id, InquiryDto inquiryDto); // تحديث استفسار موجود
         void DeleteInquiry(int id); // حذف استفسار بناءً على المعرف
         IEnumerable<InquiryDto> GetInquiriesByDateRange(DateTime startDate, DateTime endDate); // الحصول على الاستفسارات بناءً على النطاق الزمني
     }

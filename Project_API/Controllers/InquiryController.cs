@@ -3,6 +3,8 @@ using Application.ServiceContracts;
 using API_Project.DataAccess.DTOs;
 using System;
 using System.Collections.Generic;
+using API_Project.DataAccess.DTOs_Models;
+using Application.Services;
 
 namespace API_Project.Controllers
 {
@@ -84,8 +86,8 @@ namespace API_Project.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            inquiryDto.Id = id; // Ensure ID is set for update
-            _inquiryService.UpdateInquiry(inquiryDto);
+            //inquiryDto.Id = id; // Ensure ID is set for update
+            _inquiryService.UpdateInquiry(id, inquiryDto);
             return Ok("Inquiry updated successfully.");
         }
 
