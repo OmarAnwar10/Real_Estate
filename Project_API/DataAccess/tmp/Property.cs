@@ -1,12 +1,13 @@
-﻿using API_Project.DataAccess.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace application.DataAccess.Models
+namespace DataAccess.Models
 {
-
     public enum Status : byte
     {
         rent = 1,
@@ -41,10 +42,10 @@ namespace application.DataAccess.Models
         [Column(TypeName = "nvarchar(MAX)")]
         public string Description { get; set; } // وصف العقار  
         public string AdditionalNotes { get; set; } // ملاحظات إضافية حول العقار
-        public virtual User User { get; set; } // renamed from User
+        public User User { get; set; } // renamed from User
         public IEnumerable<PropertyImage> PropertyImages { get; set; } //changed from list to class
         public IEnumerable<Inquiry> Inquiries { get; set; } // الاستفسارات المتعلقة بالعقار
+        public IEnumerable<Favorite> Favorites { get; set; }
         public virtual Amenities Amenities { get; set; }
     }
-
 }

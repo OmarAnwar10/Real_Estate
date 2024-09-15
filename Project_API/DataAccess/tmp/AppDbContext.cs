@@ -1,37 +1,64 @@
-﻿using Microsoft.EntityFrameworkCore;
-using application.DataAccess.Models;
-using API_Project.DataAccess.Models;
+﻿using DataAccess.Models;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-//using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Linq;
+using System.Reflection.Emit;
+using System.Text;
+using System.Threading.Tasks;
 
-
-
-namespace application.DataAccess
+namespace DataAccess.DataContext
 {
-
-
-
-    public class AppDbContext : DbContext
+    internal class AppDbContext : DbContext
     {
-        public DbSet<Property> Properties { get; set; }
+        public DbSet<PropertyImage> PropertyImages { get; set; }
+        public DbSet<Amenities> Amenities { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Property> Properties { get; set; }
         public DbSet<Inquiry> Inquiries { get; set; }
         public DbSet<Favorite> Favorites { get; set; }
-        public DbSet<Amenities> Amenities { get; set; }
-        public DbSet<PropertyImage> propertyImages { get; set; }
 
-
-
-        
         //public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-                    => optionsBuilder.UseSqlServer("Data Source=DESKTOP-5JC2MA4\\SQLEXPRESS;Initial Catalog=Real_Estate_Db;Integrated Security=True;TrustServerCertificate=True");
-
+        {
+            base.OnConfiguring(optionsBuilder);
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-5JC2MA4\\SQLEXPRESS;Initial Catalog=FinalRealEstateDb;Integrated Security=True;Trust Server Certificate=True");
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //start
+
+            // Restrict delete on UserId to avoid multiple cascade paths
+            modelBuilder.Entity<Favorite>()
+                .HasOne(f => f.User)
+                .WithMany(u => u.Favorites)
+                .HasForeignKey(f => f.UserId)
+                .OnDelete(DeleteBehavior.Restrict); // Restrict on UserId
+
+            // Cascade delete on PropertyId to remove Favorites when a Property is deleted
+            modelBuilder.Entity<Favorite>()
+                .HasOne(f => f.Property)
+                .WithMany(p => p.Favorites)
+                .HasForeignKey(f => f.PropertyId)
+                .OnDelete(DeleteBehavior.Cascade); // Cascade on PropertyId
+
+            // Repeat similar logic for Inquiries if needed
+            modelBuilder.Entity<Inquiry>()
+                .HasOne(i => i.User)
+                .WithMany(u => u.Inquiries)
+                .HasForeignKey(i => i.UserId)
+                .OnDelete(DeleteBehavior.Restrict); // Restrict on UserId
+
+            modelBuilder.Entity<Inquiry>()
+                .HasOne(i => i.Property)
+                .WithMany(p => p.Inquiries)
+                .HasForeignKey(i => i.PropertyId)
+                .OnDelete(DeleteBehavior.Cascade); // Cascade on PropertyId
+
             base.OnModelCreating(modelBuilder);
+
+            //start
             List<Amenities> amenities = new List<Amenities>();
             for (int i = 1; i <= Math.Pow(2, 10); i++)
             {
@@ -56,45 +83,13 @@ namespace application.DataAccess
             }
             modelBuilder.Entity<Amenities>().HasData(amenities);
             //end
-            //modelBuilder.Entity<Property>()
-            //    .HasOne(p => p.User)
-            //    .WithMany(u => u.Properties)
-            //    .HasForeignKey(p => p.UserId);
-
-            //modelBuilder.Entity<Inquiry>()
-            //    .HasOne(i => i.Property)
-            //    .WithMany(p => p.Inquiries)
-            //    .HasForeignKey(i => i.PropertyId);
-
-            //modelBuilder.Entity<Inquiry>()
-            //    .HasOne(i => i.User)
-            //    .WithMany(u => u.Inquiries)
-            //    .HasForeignKey(i => i.UserId);
+            modelBuilder.Entity<User>()
+               .HasIndex(d => d.PhoneNumber)
+               .IsUnique();
 
             modelBuilder.Entity<User>()
                 .Property(u => u.FullName)
                 .HasComputedColumnSql("[F_Name] + ' ' + [L_Name]");
-
-            modelBuilder.Entity<User>()
-                .HasIndex(d => d.PhoneNumber)
-                .IsUnique();           
         }
-        //public override int SaveChanges()
-        //{
-
-        //    var Entities = from e in ChangeTracker.Entries()
-        //                   where e.State == EntityState.Modified ||
-        //                   e.State == EntityState.Added
-        //                   select e.Entity;
-
-        //    foreach (var Entity in Entities)
-        //    {
-        //        ValidationContext validationContext = new ValidationContext(Entity);
-        //        Validator.ValidateObject(Entity, validationContext, true);
-        //    }
-
-        //    return base.SaveChanges();
-        //}
     }
-
 }

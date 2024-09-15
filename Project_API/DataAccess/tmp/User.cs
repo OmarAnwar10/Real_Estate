@@ -1,13 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using API_Project.DataAccess.Models;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace application.DataAccess.Models
+namespace DataAccess.Models
 {
     public class User
     {
-        //[Key]
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; } // الرقم التعريفي للمستخدم (Primary Key)
         [Required]
         [StringLength(20)]
@@ -40,12 +41,10 @@ namespace application.DataAccess.Models
         //public string UserType { get; set; } // نوع المستخدم (بائع، مشتري، وكيل، مدير)
 
         // العلاقات
-        public virtual IEnumerable<Property> Properties { get; set; } // العقارات التي يمتلكها المستخدم
+        public IEnumerable<Property> Properties { get; set; } // العقارات التي يمتلكها المستخدم
         public IEnumerable<Inquiry> Inquiries { get; set; } // الاستفسارات المرسلة من قبل المستخدم
         public IEnumerable<Favorite> Favorites { get; set; }
 
-        
+
     }
-
-
 }
