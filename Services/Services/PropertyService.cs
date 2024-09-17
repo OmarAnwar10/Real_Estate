@@ -1,6 +1,7 @@
 ﻿using _Services.Contracts;
 using _Services.EntityMapping;
 using _Services.Models.Property;
+using _Services.Models.City;
 using application.DataAccess.Models;
 using Application.DataAccessContracts;
 
@@ -11,12 +12,14 @@ namespace Application.Services
         private readonly IUnitOfWork _unitOfWork;
         private readonly IAmenitiesService _amenitiesService;
         private readonly IPropertyImageService _propertyImageService;
+        private readonly ICityService _cityService;
 
-        public PropertyService(IUnitOfWork unitOfWork, IAmenitiesService amenitiesService, IPropertyImageService propertyImageService)
+        public PropertyService(IUnitOfWork unitOfWork, IAmenitiesService amenitiesService, IPropertyImageService propertyImageService, ICityService cityService)
         {
             _unitOfWork = unitOfWork;
             _amenitiesService = amenitiesService;
             _propertyImageService = propertyImageService;
+            _cityService = cityService;
         }
 
 
@@ -60,6 +63,10 @@ namespace Application.Services
             {
                 ValidateProperty(_property);
 
+                _cityService.CreateCity(new City_Add { Name =_property.City });
+
+                int cityId =  _cityService.GetCityByName(_property.City).Id;
+
                 _amenitiesService.CreateAmenities(_property.Amenities);
 
                 var AllAmenities = _unitOfWork.Amenities.GetAll().ToList();
@@ -80,7 +87,7 @@ namespace Application.Services
                     }
                 }
 
-                var property = PropertyMapping.MapToProperty(_property, amenitiesId);
+                var property = PropertyMapping.MapToProperty(_property, amenitiesId, cityId);
 
                 _unitOfWork.Property.Insert(property);
                 _unitOfWork.Save();
@@ -115,12 +122,17 @@ namespace Application.Services
                     property.Price = (int)_property.Price;
                 if (!string.IsNullOrEmpty(_property.Location))
                     property.Location = _property.Location;
+
                 if (!string.IsNullOrEmpty(_property.City))
-                    property.City = _property.City;
+                {
+                    _cityService.CreateCity(new City_Add { Name = _property.City });
+
+                    int cityId = _cityService.GetCityByName(_property.City).Id;
+                    property.CityId = cityId;
+                }
+
                 if (_property.Area > 0)
                     property.Area = (int)_property.Area;
-                if (!string.IsNullOrEmpty(_property.PropertyType))
-                    property.PropertyType = _property.PropertyType;
                 if (_property.Bedrooms > 0)
                     property.Bedrooms = (int)_property.Bedrooms;
                 if (_property.Bathrooms > 0)
@@ -268,9 +280,6 @@ namespace Application.Services
 
             if (property.Area <= 0)
                 throw new ArgumentException("Property area must be greater than zero.", nameof(property.Area));
-
-            if (string.IsNullOrEmpty(property.PropertyType))
-                throw new ArgumentException("Property type is required.", nameof(property.PropertyType));
 
             if (property.Bedrooms < 0)
                 throw new ArgumentException("Number of bedrooms cannot be negative.", nameof(property.Bedrooms));

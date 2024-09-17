@@ -12,7 +12,7 @@ namespace _Services.Models.Property
         public string? Location { get; set; }
         public string? City { get; set; }
         public double? Area { get; set; }
-        public string? PropertyType { get; set; }
+        public PropType? PropertyType { get; set; }
         public int? Bedrooms { get; set; }
         public int? Bathrooms { get; set; }
         public int? YearBuilt { get; set; }

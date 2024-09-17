@@ -19,14 +19,14 @@ namespace application.DataAccess
         public DbSet<Favorite> Favorites { get; set; }
         public DbSet<Amenities> Amenities { get; set; }
         public DbSet<PropertyImage> Images { get; set; }
-
+        public DbSet<City> Cities { get; set; }
 
 
 
         //public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-                    => optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=Real_Estate_Db_V3;Integrated Security=True;TrustServerCertificate=True");
+                    => optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=Real_Estate_Db_V3.9;Integrated Security=True;TrustServerCertificate=True");
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -49,6 +49,16 @@ namespace application.DataAccess
                 .WithOne(a => a.Property)
                 .HasForeignKey(p => p.PropertyId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Property>()
+                .HasOne(p => p.City)
+                .WithMany(a => a.Properties)
+                .HasForeignKey(p => p.CityId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<City>()
+            .HasIndex(c => c.Name)
+            .IsUnique();
 
             // العلاقات الأخرى
             modelBuilder.Entity<Inquiry>()

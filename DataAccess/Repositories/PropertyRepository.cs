@@ -16,6 +16,7 @@ namespace API_Project.DataAccess.Repositories
         {
             return _dbSet.Include(p => p.Amenities)
                          .Include(p => p.Images)
+                         .Include(p => p.City)
                          .AsEnumerable();
         }
         override public Property? GetById(int id)
@@ -24,6 +25,7 @@ namespace API_Project.DataAccess.Repositories
                          .Include(p => p.Amenities)
                          .Include(p => p.Images)
                          .Include(p => p.Inquiries)
+
                          .FirstOrDefault(p => p.Id == id);
         }
 
@@ -44,7 +46,7 @@ namespace API_Project.DataAccess.Repositories
         {
 
 
-            var properties = _dbSet.Include(p => p.Amenities).Include(p => p.Images).AsEnumerable();
+            var properties = _dbSet.Include(p => p.Amenities).Include(p => p.Images).Include(p => p.City).AsEnumerable();
 
             if (!string.IsNullOrEmpty(keyWord))
             {
@@ -55,7 +57,7 @@ namespace API_Project.DataAccess.Repositories
             if (!string.IsNullOrEmpty(city))
             {
                 city = city.ToLower();
-                properties = properties.Where(p => p.City.ToLower().Contains(city));
+                properties = properties.Where(p => p.City.Name.ToLower().Contains(city));
             }
 
             if (status != Status.used)

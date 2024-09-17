@@ -16,6 +16,7 @@ namespace API_Project.DataAccess.UoW
         private readonly IFavoriteRepository _favoriteRepository;
         private readonly IPropertyImageRepository _propertyImageRepository;
         private readonly IAmenitiesRepository _amenitiesRepository;
+        private readonly ICityRepository _cityRepository;
 
         public UnitOfWork(AppDbContext context,
                           IPropertyRepository propertyRepository,
@@ -23,7 +24,8 @@ namespace API_Project.DataAccess.UoW
                           IInquiryRepository inquiryRepository,
                           IFavoriteRepository favoriteRepository,
                           IPropertyImageRepository propertyImageRepository,
-                          IAmenitiesRepository AmenitiesRepository)
+                          IAmenitiesRepository AmenitiesRepository,
+                          ICityRepository cityRepository)
         {
             _context = context;
             _propertyRepository = propertyRepository;
@@ -32,6 +34,7 @@ namespace API_Project.DataAccess.UoW
             _favoriteRepository = favoriteRepository;
             _propertyImageRepository = propertyImageRepository;
             _amenitiesRepository = AmenitiesRepository;
+            _cityRepository = cityRepository;
         }
 
         public IPropertyRepository Property => _propertyRepository;
@@ -40,6 +43,7 @@ namespace API_Project.DataAccess.UoW
         public IFavoriteRepository Favorite => _favoriteRepository;
         public IPropertyImageRepository PropertyImage => _propertyImageRepository;
         public IAmenitiesRepository Amenities => _amenitiesRepository;
+        public ICityRepository City => _cityRepository;
 
         public void Save()
         {

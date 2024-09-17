@@ -18,6 +18,7 @@ namespace _Service
             Services.AddScoped<IPropertyImageService, PropertyImageService>();
             Services.AddScoped<IFavoriteService, FavoriteService>();
             Services.AddScoped<IInquiryService, InquiryService>();
+            Services.AddScoped<ICityService, CityService>();
             Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 

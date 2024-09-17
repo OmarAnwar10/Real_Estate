@@ -11,6 +11,7 @@ namespace Application.DataAccessContracts
         IFavoriteRepository Favorite { get; }
         IPropertyImageRepository PropertyImage { get; }
         IAmenitiesRepository Amenities { get; }
+        ICityRepository City { get; }
 
         void Save();
     }

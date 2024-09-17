@@ -1,11 +1,12 @@
 ﻿using _Services.Models.Property;
 using application.DataAccess.Models;
+using _Services.Models.City;
 
 namespace _Services.EntityMapping
 {
     public static class PropertyMapping
     {
-        public static Property MapToProperty(Property_Create property, int Amenities_Id)
+        public static Property MapToProperty(Property_Create property, int Amenities_Id, int cityId)
         {
             return new Property
             {
@@ -14,7 +15,7 @@ namespace _Services.EntityMapping
                 Description = property.Description,
                 Price = property.Price,
                 Location = property.Location,
-                City = property.City,
+                CityId = cityId,
                 Area = property.Area,
                 PropertyType = property.PropertyType,
                 Bedrooms = property.Bedrooms,
@@ -37,7 +38,7 @@ namespace _Services.EntityMapping
                 Description = p.Description,
                 Price = p.Price,
                 Location = p.Location,
-                City = p.City,
+                City = p.City.Name,
                 Area = p.Area,
                 PropertyType = p.PropertyType,
                 Bedrooms = p.Bedrooms,
@@ -64,7 +65,7 @@ namespace _Services.EntityMapping
                 Description = property.Description,
                 Price = property.Price,
                 Location = property.Location,
-                City = property.City,
+                City = property.City.Name,
                 Area = property.Area,
                 PropertyType = property.PropertyType,
                 Bedrooms = property.Bedrooms,

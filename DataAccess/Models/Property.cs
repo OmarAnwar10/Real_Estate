@@ -13,6 +13,18 @@ namespace application.DataAccess.Models
         used = 4
     }
 
+    public enum PropType : byte
+    {
+        apartment = 1,
+        villa = 2,
+        office = 3,
+        land = 4,
+        shop = 5,
+        warehouse = 6,
+        building = 7,
+        other = 8
+    }
+
     public class Property
     {
         public int Id { get; set; } // الرقم التعريفي للعقار (Primary Key)
@@ -25,9 +37,8 @@ namespace application.DataAccess.Models
         [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; } // سعر العقار
         public string Location { get; set; } // موقع العقار
-        public string City { get; set; }
         public double Area { get; set; } // مساحة العقار بالمتر المربع
-        public string PropertyType { get; set; } // نوع العقار (شقة، فيلا، مكتب، إلخ)
+        public PropType PropertyType { get; set; } // نوع العقار (شقة، فيلا، مكتب، إلخ)
         [Required]
         public int Bedrooms { get; set; } // عدد غرف النوم
         [Required]
@@ -40,6 +51,9 @@ namespace application.DataAccess.Models
 
         public int OwnerId { get; set; } // الرقم التعريفي لصاحب العقار (ممكن يكون null لو العقار مش متاح للبيع)
         public virtual User Owner { get; set; } // صاحب العقار
+
+        public int CityId { get; set; }
+        public virtual City City { get; set; }
 
         public int AmenitiesId { get; set; }
         public virtual Amenities Amenities { get; set; }

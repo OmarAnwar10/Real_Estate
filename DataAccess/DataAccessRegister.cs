@@ -22,6 +22,7 @@ namespace _DataAccess
             Services.AddScoped<IFavoriteRepository, FavoriteRepository>();
             Services.AddScoped<IPropertyImageRepository, PropertyImageRepository>();
             Services.AddScoped<IAmenitiesRepository, AmenitiesRepository>();
+            Services.AddScoped<ICityRepository, CityRepository>();
 
             Services.AddDbContext<AppDbContext>();
 
