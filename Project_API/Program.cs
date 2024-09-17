@@ -1,3 +1,5 @@
+using _DataAccess;
+using _Service;
 
 namespace Project_API
 {
@@ -8,6 +10,11 @@ namespace Project_API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+
+
+
+            builder.Services.RegisterDataAccess();
+            builder.Services.RegisterService();
 
 
 
