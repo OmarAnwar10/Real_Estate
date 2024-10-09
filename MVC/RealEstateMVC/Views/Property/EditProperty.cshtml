@@ -1,0 +1,148 @@
+﻿@{
+    ViewData["Title"] = "Edit Property";
+    Layout = "AppLayout";
+    ViewData["PageHeader"] = "Edit Property";
+}
+
+    <!-- Main content -->
+    <div class="container">
+        <div class="col-lg-8 col-md-12 mx-auto">
+            <div class="dashboard-content">
+                <div class="submit-property-form bg-white p-4 shadow-sm">
+                    <!-- Page Title -->
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="mb-4">Edit Property Information</h4>
+                        <a href="@Url.Action("Index", "User")" class="btn btn-outline-primary btn-sm">Back to Property</a>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6 mb-3">
+                                <label for="property-title">Property Title</label>
+                                <input type="text" id="property-title" class="form-control"
+                                       placeholder="Property Title" value="Current Property Title">
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <label for="status">Status</label>
+                                <select id="status" class="form-select">
+                                    <option selected>For Sale</option>
+                                    <option>For Rent</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <label for="price">Price (USD)</label>
+                                <input type="text" id="price" class="form-control" placeholder="Price" value="500000">
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <label for="area">Area (SqFt)</label>
+                                <input type="text" id="area" class="form-control" placeholder="Area" value="2500">
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <label for="rooms">Rooms</label>
+                                <select id="rooms" class="form-select">
+                                    <option selected>3</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <label for="bathrooms">Bathrooms</label>
+                                <select id="bathrooms" class="form-select">
+                                    <option selected>2</option>
+                                    <option>1</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <label for="year-built">Year Built</label>
+                                <input type="text" id="year-built" class="form-control" placeholder="Year Built" value="2020">
+                            </div>
+                            <div class="mb-3">
+                                <label for="property-description" class="form-label">Description</label>
+                                <textarea class="form-control" id="property-description" rows="3"
+                                          placeholder="Enter property description" required>Current property description...</textarea>
+                            </div>
+                        </div>
+
+                        <h4 class="my-4">Location</h4>
+                        <div class="row">
+                            <div class="col-lg-6 mb-3">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" class="form-control" placeholder="Address" value="123 Main St">
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <label for="state">State</label>
+                                <select id="state" class="form-select">
+                                    <option>Choose State</option>
+                                    <option selected>California</option>
+                                    <option>Alabama</option>
+                                    <option>Florida</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <label for="city">City</label>
+                                <input type="text" id="city" class="form-control" placeholder="City" value="Los Angeles">
+                            </div>
+                        </div>
+
+                        <h4 class="my-4">Images</h4>
+                        <div class="row mb-3">
+                            <div class="col-lg-12 mb-3">
+                                <input type="file" class="form-control" id="images" multiple>
+                                <small class="form-text text-muted">You can upload multiple images.</small>
+                            </div>
+                        </div>
+
+                        <h4 class="my-4">Amenities</h4>
+                        <div class="row mb-3">
+                            <div class="col-lg-4 form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="garage" checked>
+                                <label class="form-check-label" for="garage">Garage</label>
+                            </div>
+                            <div class="col-lg-4 form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="two-stories">
+                                <label class="form-check-label" for="two-stories">Two Stories</label>
+                            </div>
+                            <div class="col-lg-4 form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="laundry">
+                                <label class="form-check-label" for="laundry">Laundry Room</label>
+                            </div>
+                            <div class="col-lg-4 form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="pool">
+                                <label class="form-check-label" for="pool">Pool</label>
+                            </div>
+                            <div class="col-lg-4 form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="garden">
+                                <label class="form-check-label" for="garden">Garden</label>
+                            </div>
+                            <div class="col-lg-4 form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="elevator">
+                                <label class="form-check-label" for="elevator">Elevator</label>
+                            </div>
+                            <div class="col-lg-4 form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="balcony">
+                                <label class="form-check-label" for="balcony">Balcony</label>
+                            </div>
+                            <div class="col-lg-4 form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="parking" checked>
+                                <label class="form-check-label" for="parking">Parking</label>
+                            </div>
+                            <div class="col-lg-4 form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="central-heating" checked>
+                                <label class="form-check-label" for="central-heating">Central Heating</label>
+                            </div>
+                            <div class="col-lg-4 form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="furnished">
+                                <label class="form-check-label" for="furnished">Furnished</label>
+                            </div>
+                        </div>
+
+                        <div class="send-btn">
+                            <button type="submit" class="btn button-theme">Update Property</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

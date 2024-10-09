@@ -1,0 +1,21 @@
+﻿@model IEnumerable<PropertyViewModel>
+@{
+    ViewData["Title"] = "GetProperty";
+}
+
+<h1>GetProperty</h1>
+<table class="table">
+    <thead>
+    <th>PropertyName</th>
+    <th>PropertyPrice</th>
+    <th>UserFullName</th>
+    </thead>
+@foreach(var property in Model)
+{
+        <tr>
+            <td>@Html.DisplayFor(modelItem => property.PropertyName)</td>
+            <td>@Html.DisplayFor(modelItem => property.UserFullName)</td>
+            <td>@Html.DisplayFor(modelItem => property.PropertyPrice)</td>
+        </tr>       
+}
+</table>

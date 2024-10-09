@@ -1,0 +1,1005 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\RealEstateMVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\RealEstateMVC.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\animate.css",
+      "PackagePath": "staticwebassets\\assets\\css\\animate.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\bootstrap-select.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap-select.min.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\fontello.css",
+      "PackagePath": "staticwebassets\\assets\\css\\fontello.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\icheck.min_all.css",
+      "PackagePath": "staticwebassets\\assets\\css\\icheck.min_all.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\ion.rangeSlider.css",
+      "PackagePath": "staticwebassets\\assets\\css\\ion.rangeSlider.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\ion.rangeSlider.skinFlat.css",
+      "PackagePath": "staticwebassets\\assets\\css\\ion.rangeSlider.skinFlat.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\ion.rangeSlider.skinNice.css",
+      "PackagePath": "staticwebassets\\assets\\css\\ion.rangeSlider.skinNice.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\jquery.slitslider.css",
+      "PackagePath": "staticwebassets\\assets\\css\\jquery.slitslider.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\lightslider.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\lightslider.min.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\normalize.css",
+      "PackagePath": "staticwebassets\\assets\\css\\normalize.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.carousel.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\owl.theme.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.theme.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\owl.transitions.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.transitions.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\price-range.css",
+      "PackagePath": "staticwebassets\\assets\\css\\price-range.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\assets\\css\\responsive.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\slider.css",
+      "PackagePath": "staticwebassets\\assets\\css\\slider.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\styleNoJS.css",
+      "PackagePath": "staticwebassets\\assets\\css\\styleNoJS.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\css\\wizard.css",
+      "PackagePath": "staticwebassets\\assets\\css\\wizard.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\FontAwesome_1.otf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\FontAwesome_1.otf"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\fontawesome-webfont_1.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont_1.eot"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\fontawesome-webfont_1.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont_1.svg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\fontawesome-webfont_1.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont_1.ttf"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\fontawesome-webfont_1.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont_1.woff"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\fontello\\fontello.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontello\\fontello.eot"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\fontello\\fontello.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontello\\fontello.svg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\fontello\\fontello.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontello\\fontello.ttf"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\fontello\\fontello.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontello\\fontello.woff"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\icon-7-stroke\\css\\helper.css",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icon-7-stroke\\css\\helper.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\icon-7-stroke\\css\\pe-icon-7-stroke.css",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icon-7-stroke\\css\\pe-icon-7-stroke.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\icon-7-stroke\\fonts\\Pe-icon-7-stroke.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icon-7-stroke\\fonts\\Pe-icon-7-stroke.eot"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\icon-7-stroke\\fonts\\Pe-icon-7-stroke.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icon-7-stroke\\fonts\\Pe-icon-7-stroke.svg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\icon-7-stroke\\fonts\\Pe-icon-7-stroke.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icon-7-stroke\\fonts\\Pe-icon-7-stroke.ttf"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\fonts\\icon-7-stroke\\fonts\\Pe-icon-7-stroke.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icon-7-stroke\\fonts\\Pe-icon-7-stroke.woff"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\ads.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\ads.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\arrow-left.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\arrow-left.svg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\arrow-right.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\arrow-right.svg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\arrows-small.png",
+      "PackagePath": "staticwebassets\\assets\\img\\arrows-small.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\arrows.png",
+      "PackagePath": "staticwebassets\\assets\\img\\arrows.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\bg-footer.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-footer.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\blog1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog1.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\blog2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog2.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\chevron-down.png",
+      "PackagePath": "staticwebassets\\assets\\img\\chevron-down.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\client-face1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\client-face1.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\client-face2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\client-face2.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\controls.png",
+      "PackagePath": "staticwebassets\\assets\\img\\controls.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\default-property.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\default-property.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\demo\\property-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\demo\\property-1.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\demo\\property-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\demo\\property-2.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\demo\\property-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\demo\\property-3.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\demo\\property-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\demo\\property-4.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\demo\\property-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\demo\\property-5.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\demo\\property-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\demo\\property-6.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\demo\\small-proerty-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\demo\\small-proerty-2.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\demo\\small-property-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\demo\\small-property-1.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\demo\\small-property-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\demo\\small-property-2.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\demo\\small-property-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\demo\\small-property-3.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\dsdsds33 - Copy.png",
+      "PackagePath": "staticwebassets\\assets\\img\\dsdsds33 - Copy.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\footer-logo-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\footer-logo-2.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\footer-logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\footer-logo.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\home\\buy.jfif",
+      "PackagePath": "staticwebassets\\assets\\img\\home\\buy.jfif"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\home\\rent.jfif",
+      "PackagePath": "staticwebassets\\assets\\img\\home\\rent.jfif"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\home\\sell.jfif",
+      "PackagePath": "staticwebassets\\assets\\img\\home\\sell.jfif"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\icon-shearch.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon-shearch.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\icon\\bed-orange.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\bed-orange.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\icon\\bed.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\bed.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\icon\\cars-orange.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\cars-orange.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\icon\\cars.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\cars.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\icon\\os-orange.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\os-orange.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\icon\\os.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\os.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\icon\\picine-orange.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\picine-orange.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\icon\\picine.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\picine.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\icon\\rent-orange.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\rent-orange.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\icon\\room-orange.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\room-orange.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\icon\\room.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\room.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\icon\\sale-orange.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\sale-orange.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\icon\\shawer-orange.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\shawer-orange.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\icon\\shawer.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\shawer.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\logo.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\logo.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\page-header.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\page-header.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\preloader.gif",
+      "PackagePath": "staticwebassets\\assets\\img\\preloader.gif"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\pro-ads.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pro-ads.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\property-1\\property1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\property-1\\property1.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\property-1\\property2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\property-1\\property2.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\property-1\\property3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\property-1\\property3.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\property-1\\property4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\property-1\\property4.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\property-video.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\property-video.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\similar\\property-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\similar\\property-1.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\similar\\property-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\similar\\property-2.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\similar\\property-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\similar\\property-3.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\aero.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\aero.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\aero@2x.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\aero@2x.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\blue.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\blue.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\blue@2x.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\blue@2x.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\green.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\green.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\green@2x.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\green@2x.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\grey.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\grey.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\grey@2x.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\grey@2x.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\orange.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\orange.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\orange@2x.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\orange@2x.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\pink.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\pink.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\pink@2x.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\pink@2x.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\purple.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\purple.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\purple@2x.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\purple@2x.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\red.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\red.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\red@2x.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\red@2x.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\square.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\square.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\square@2x.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\square@2x.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\yellow.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\yellow.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\yellow@2x.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\yellow@2x.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\skin\\yellow_1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\skin\\yellow_1.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\slide-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slide-2.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\slide1\\slider-image-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slide1\\slider-image-1.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\slide1\\slider-image-1Tmp.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slide1\\slider-image-1Tmp.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\slide1\\slider-image-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slide1\\slider-image-2.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\slide1\\slider-image-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slide1\\slider-image-4.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\slide2\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slide2\\1.jpg"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\delicious_grey.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\delicious_grey.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\delicious_white.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\delicious_white.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\digg_grey.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\digg_grey.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\digg_white.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\digg_white.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\dribbble_grey.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\dribbble_grey.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\dribbble_white.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\dribbble_white.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\facebook_grey.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\facebook_grey.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\facebook_white.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\facebook_white.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\linkedin_grey.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\linkedin_grey.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\linkedin_white.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\linkedin_white.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\rss_grey.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\rss_grey.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\rss_white.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\rss_white.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\tumblr_grey.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\tumblr_grey.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\tumblr_white.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\tumblr_white.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\twitter_grey.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\twitter_grey.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\twitter_white.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\twitter_white.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\vimeo_grey.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\vimeo_grey.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\vimeo_white.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\vimeo_white.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\youtube_grey.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\youtube_grey.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\social_big\\youtube_white.png",
+      "PackagePath": "staticwebassets\\assets\\img\\social_big\\youtube_white.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\img\\welcome-bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\welcome-bg.png"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\bootstrap-hover-dropdown.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap-hover-dropdown.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\bootstrap-select.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap-select.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\bootstrap-slider.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap-slider.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\bootstrap-wizard.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap-wizard.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\easypiechart.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\easypiechart.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\gmaps.init.js",
+      "PackagePath": "staticwebassets\\assets\\js\\gmaps.init.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\gmaps.js",
+      "PackagePath": "staticwebassets\\assets\\js\\gmaps.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\icheck.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\icheck.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\jquery-1.10.2.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-1.10.2.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\jquery.ba-cond.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.ba-cond.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\jquery.bootstrap.wizard.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.bootstrap.wizard.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\jquery.easypiechart.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.easypiechart.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\jquery.slitslider.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.slitslider.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\lightslider.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\lightslider.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\modernizr-2.6.2.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\modernizr-2.6.2.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\modernizr.custom.79639.js",
+      "PackagePath": "staticwebassets\\assets\\js\\modernizr.custom.79639.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\price-range.js",
+      "PackagePath": "staticwebassets\\assets\\js\\price-range.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\wizard.js",
+      "PackagePath": "staticwebassets\\assets\\js\\wizard.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\wow.js",
+      "PackagePath": "staticwebassets\\assets\\js\\wow.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\assets\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\wow.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\css\\aboutUs.css",
+      "PackagePath": "staticwebassets\\css\\aboutUs.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\css\\common.css",
+      "PackagePath": "staticwebassets\\css\\common.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\css\\propertyDetails.css",
+      "PackagePath": "staticwebassets\\css\\propertyDetails.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\css\\propertyMessages.css",
+      "PackagePath": "staticwebassets\\css\\propertyMessages.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\js\\userPartialsLoader.js",
+      "PackagePath": "staticwebassets\\js\\userPartialsLoader.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\anas\\cls\\FinalRealEstateProject\\RealEstateMVC\\RealEstateMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RealEstateMVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.RealEstateMVC.props",
+      "PackagePath": "build\\RealEstateMVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.RealEstateMVC.props",
+      "PackagePath": "buildMultiTargeting\\RealEstateMVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.RealEstateMVC.props",
+      "PackagePath": "buildTransitive\\RealEstateMVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,194 @@
+﻿@{
+    ViewData["Title"] = "Properties";
+    Layout = "AppLayout";
+    ViewData["PageHeader"] = "Find Your Perfect Home Today – Just One Click Away";
+}
+
+<!-- Properties Area -->
+    <div class="properties-area recent-property" style="background-color: #FFF; margin-top: 20px; margin-bottom: 20px;">
+        <div class="container">
+            <div class="row">
+                <!-- Properties List -->
+                <div class="col-md-9 padding-top-40 properties-page">
+                    <!-- Filters and Sorting -->
+                    <div class="row mb-4">
+                        <div class="col-12 d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <!-- Sorting Options -->
+                                <div class="me-3">
+                                    <ul class="list-unstyled d-flex mb-0">
+                                        <li class="me-2">
+                                            <a href="#" class="text-decoration-none" data-orderby="property_date" data-order="ASC">
+                                                Property Date <i class="fa fa-sort-amount-asc"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-decoration-none" data-orderby="property_price" data-order="DESC">
+                                                Property Price <i class="fa fa-sort-numeric-desc"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Items Per Page -->
+                                <div class="me-3">
+                                    <label for="items_per_page" class="mb-0"><b>Properties per page:</b></label>
+                                    <select id="items_per_page" name="per_page" class="form-select form-select-sm">
+                                        <option value="3">3</option>
+                                        <option value="6">6</option>
+                                        <option value="9">9</option>
+                                        <option selected="selected" value="12">12</option>
+                                        <option value="15">15</option>
+                                        <option value="30">30</option>
+                                        <option value="45">45</option>
+                                        <option value="60">60</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Layout Switcher -->
+                            <div>
+                                <a class="btn btn-outline-primary btn-sm me-2" href="#" title="List View">
+                                    <i class="fa fa-th-list"></i>
+                                </a>
+                                <a class="btn btn-primary btn-sm" href="#" title="Grid View">
+                                    <i class="fa fa-th"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property Cards -->
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card property-item">
+                                <img src="~/assets/img/property-1/property1.jpg" class="card-img-top" alt="Property 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Luxury Apartment</h5>
+                                    <p class="card-text">4 Beds | 3 Baths | 2500 sq ft</p>
+                                    <p class="card-text">$500,000</p>
+                                    <a href="@Url.Action("PropertyDetails", "Property")" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card property-item">
+                                <img src="~/assets/img/property-1/property2.jpg" class="card-img-top" alt="Property 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cozy Cottage</h5>
+                                    <p class="card-text">2 Beds | 1 Bath | 1500 sq ft</p>
+                                    <p class="card-text">$300,000</p>
+                                    <a href="@Url.Action("PropertyDetails", "Property")" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card property-item">
+                                <img src="~/assets/img/property-1/property3.jpg" class="card-img-top" alt="Property 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Modern Villa</h5>
+                                    <p class="card-text">5 Beds | 4 Baths | 3500 sq ft</p>
+                                    <p class="card-text">$900,000</p>
+                                    <a href="@Url.Action("PropertyDetails", "Property")" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="row">
+                        <div class="col-12">
+                            <nav>
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-md-3">
+                    <div class="card card-body">
+                        <!-- Search Filters -->
+                        <form class="row g-3">
+                            <div class="col-12">
+                                <input type="text" class="form-control" placeholder="Keyword">
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select" aria-label="Select your city">
+                                    <option selected>Select your city</option>
+                                    <option value="1">New York, CA</option>
+                                    <option value="2">Paris</option>
+                                    <option value="3">Casablanca</option>
+                                    <option value="4">Tokyo</option>
+                                    <option value="5">Marrakech</option>
+                                    <option value="6">Kyoto, Shibuya</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select" aria-label="Property status">
+                                    <option selected>Status</option>
+                                    <option value="1">Rent</option>
+                                    <option value="2">Buy</option>
+                                    <option value="3">Used</option>
+                                </select>
+                            </div>
+
+                            <!-- Price Range -->
+                            <div class="col-12">
+                                <label for="price-range" class="form-label">Price Range</label>
+                                <input type="range" class="form-range" id="price-range" min="100000" max="1000000" step="10000">
+                            </div>
+
+                            <!-- Area Size -->
+                            <div class="col-12">
+                                <label for="property-geo" class="form-label">Area Size (sq ft)</label>
+                                <input type="range" class="form-range" id="property-geo" min="500" max="5000" step="100">
+                            </div>
+
+                            <!-- Number of Baths -->
+                            <div class="col-12">
+                                <label for="bathrooms" class="form-label">Bathrooms</label>
+                                <input type="number" class="form-control" id="bathrooms" min="1" max="10">
+                            </div>
+
+                            <!-- Number of Beds -->
+                            <div class="col-12">
+                                <label for="bedrooms" class="form-label">Bedrooms</label>
+                                <input type="number" class="form-control" id="bedrooms" min="1" max="10">
+                            </div>
+
+                            <!-- Features -->
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="fireplace">
+                                    <label class="form-check-label" for="fireplace">Fireplace</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="dual-sinks">
+                                    <label class="form-check-label" for="dual-sinks">Dual Sinks</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="hurricane-shutters">
+                                    <label class="form-check-label" for="hurricane-shutters">Hurricane Shutters</label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-100">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
