@@ -1,0 +1,105 @@
+/* General Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar-nav .nav-link {
+    color: #f8f9fa !important;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #ffc107 !important;
+    }
+
+/* Buttons */
+.btn-outline-success,
+.btn-outline-primary {
+    border-radius: 20px;
+}
+
+.btn-outline-success {
+    border-color: #28a745;
+    color: #28a745;
+}
+
+    .btn-outline-success:hover {
+        background-color: #28a745;
+        color: #fff;
+    }
+
+.btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+    .btn-outline-primary:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 15px 0;
+    text-align: center;
+}
+
+    .footer a {
+        color: #ffc107;
+    }
+
+        .footer a:hover {
+            color: #e0a800;
+        }
+
+/* Page Head */
+.page-head {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Property Items */
+.property-item img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.property-item .card-body {
+    padding: 1.25rem;
+}
+
+/* Pagination */
+.pagination {
+    justify-content: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .filter-toggle {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .filter-toggle {
+        font-size: 0.875rem;
+        padding: 6px 12px;
+    }
+}

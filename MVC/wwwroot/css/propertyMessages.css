@@ -1,0 +1,170 @@
+﻿/* Dashboard Navigation */
+/*.dashboard-nav-2 {
+    background-color: #f8f9fa;*/ /* Matches the existing background color */
+    /*border-radius: 5px;
+    padding: 15px;
+}*/
+
+/* Header Inner */
+/*.header-inner {
+    text-align: center;
+}*/
+
+/* Profile Photo */
+.profile-photo {
+    text-align: center;
+}
+
+    /*.profile-photo img {
+        border-radius: 50%;*/ /* Consistent with existing styles */
+        /*width: 100px;
+        height: 100px;
+    }*/
+
+/* Change Photo Button */
+/*.change-photo-btn {
+    margin-top: 10px;
+}*/
+
+/* Detail Section */
+/*.detail ul {
+    list-style: none;
+    padding: 0;
+}*/
+
+    /*.detail ul li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;*/ /* Consistent text color */
+        /*border: 1px solid #ddd;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }*/
+
+        /*.detail ul li a.active {
+            background-color: #007bff;*/ /* Primary color */
+            /*color: white;
+        }*/
+
+/* Dashboard Content */
+/*.dashboard-content {
+    padding: 15px;
+}*/
+
+/* Dashboard List */
+/*.dashboard-list {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}*/
+
+/* Form Group */
+/*.form-group label {
+    font-weight: bold;*/ /* Matches existing form styles */
+/*}*/
+
+/* Send Button */
+/*.send-btn {
+    text-align: center;
+    margin-top: 15px;
+}*/
+
+/* Button Theme */
+/*.btn.button-theme {
+    background-color: #007bff;*/ /* Primary color */
+    /*color: white;
+    border-radius: 10px;*/ /* Consistent button styling */
+/*}*/
+
+    /*.btn.button-theme:hover {
+        background-color: #0056b3;*/ /* Darker shade for hover */
+    /*}*/
+
+/* Card Styles */
+/*.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}*/
+
+/*    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }*/
+
+/*.card-img-left {
+    border-radius: 5px 0 0 5px;
+}*/
+
+/*.actions a {
+    margin-right: 5px;
+}*/
+
+/*.actions .btn {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}*/
+
+/* Card Adjustments */
+.card {
+    height: auto; /* Automatic height */
+    padding: 10px; /* Reduced padding for consistency */
+}
+
+.card-body {
+    padding: 10px; /* Adjusted padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*.card-img-left {
+    width: 200px;*/ /* Consistent image width */
+    /*height: auto;*/ /* Automatic height */
+/*}*/
+
+/* Actions Section */
+.actions {
+    margin-top: 10px; /* Reduced margin for better alignment */
+}
+
+/* Message Card Styles */
+.message-card {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff; /* Matches existing card background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*.message-body {
+    margin-top: 15px;
+}*/
+
+    /*.message-body p {
+        font-size: 14px;
+        color: #555;*/ /* Consistent text color */
+    /*}*/
+
+/*.sender-name {
+    font-weight: bold;
+    font-size: 16px;*/ /* Consistent font size */
+/*}
+
+.sender-phone {
+    font-weight: bold;
+    font-size: 16px;*/ /* Consistent font size */
+    /*color: #3d3d3d;
+}*/
+
+/*.message-date {
+    font-size: 12px;
+    color: #888;*/ /* Consistent date color */
+/*}*/
