@@ -34,7 +34,7 @@ namespace API_Project.DataAccess.Repositories
         //    return _dbSet.Where(p => p.Price >= minPrice && p.Price <= maxPrice).ToList();
         //}
 
-        public IEnumerable<Property> GetPropertiesWithFilter(string? keyWord = null, string? city = null, Status status = Status.buy,
+        public IEnumerable<Property> GetPropertiesWithFilter(string? keyWord = null, string? city = null, Status? status = null,
 
                                                        decimal? minPrice = null, decimal? maxPrice = null,
                                                        double? minArea = null, double? maxArea = null,
@@ -51,7 +51,7 @@ namespace API_Project.DataAccess.Repositories
             if (!string.IsNullOrEmpty(keyWord))
             {
                 keyWord = keyWord.ToLower();
-                properties = properties.Where(p => p.Title.ToLower().Contains(keyWord) || p.Description.ToLower().Contains(keyWord) || p.Location.ToLower().Contains(keyWord));
+                properties = properties.Where(p => p.Title.ToLower().Contains(keyWord) || (p.Description != null ? p.Description.ToLower().Contains(keyWord):false) || p.Location.ToLower().Contains(keyWord));
             }
 
             if (!string.IsNullOrEmpty(city))
@@ -60,7 +60,7 @@ namespace API_Project.DataAccess.Repositories
                 properties = properties.Where(p => p.City.Name.ToLower().Contains(city));
             }
 
-            if (status != Status.used)
+            if (status != Status.used && status != null)
                 properties = properties.Where(p => p.Status == status);
 
             if (minPrice.HasValue)
@@ -110,7 +110,7 @@ namespace API_Project.DataAccess.Repositories
 
 
 
-        public IEnumerable<Property> GetPropertiesWithFilterOrderedByPrice(string? keyWord = null, string? city = null, Status status = Status.buy,
+        public IEnumerable<Property> GetPropertiesWithFilterOrderedByPrice(string? keyWord = null, string? city = null, Status? status = null,
 
                                                decimal? minPrice = null, decimal? maxPrice = null,
                                                double? minArea = null, double? maxArea = null,
@@ -133,7 +133,7 @@ namespace API_Project.DataAccess.Repositories
 
 
 
-        public IEnumerable<Property> GetPropertiesWithFilterOrderedByDateAdded(string? keyWord = null, string? city = null, Status status = Status.buy,
+        public IEnumerable<Property> GetPropertiesWithFilterOrderedByDateAdded(string? keyWord = null, string? city = null, Status? status = null,
 
                                                decimal? minPrice = null, decimal? maxPrice = null,
                                                double? minArea = null, double? maxArea = null,

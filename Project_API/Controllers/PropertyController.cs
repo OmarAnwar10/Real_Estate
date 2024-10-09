@@ -24,6 +24,13 @@ namespace API_Project.Controllers
             return Ok(properties);
         }
 
+        [HttpGet("GetPropertyList")]
+        public IActionResult GetPropertyList()
+        {
+            var properties = _propertyService.GetPropertyList();
+            return Ok(properties);
+        }
+
         // Get property by ID
         [HttpGet("{id}")]
         public IActionResult GetPropertyById(int id)
@@ -67,7 +74,7 @@ namespace API_Project.Controllers
 
         // Get properties by Filtering with optional parameters
         [HttpGet("OrderedByPrice")]
-        public IActionResult GetPropertiesWithFilterOrderedByPrice(string? keyWord = null, string? city = null, Status status = Status.buy,
+        public IActionResult GetPropertiesWithFilterOrderedByPrice(string? keyWord = null, string? city = null, Status? status = null,
 
                                                decimal? minPrice = null, decimal? maxPrice = null,
                                                double? minArea = null, double? maxArea = null,
@@ -85,7 +92,7 @@ namespace API_Project.Controllers
         }
 
         [HttpGet("OrderedByDateAdded")]
-        public IActionResult GetPropertiesWithFilterOrderedByDateAdded(string? keyWord = null, string? city = null, Status status = Status.buy,
+        public IActionResult GetPropertiesWithFilterOrderedByDateAdded(string? keyWord = null, string? city = null, Status? status = null,
 
                                                decimal? minPrice = null, decimal? maxPrice = null,
                                                double? minArea = null, double? maxArea = null,
@@ -99,6 +106,21 @@ namespace API_Project.Controllers
         {
 
             var properties = _propertyService.GetPropertiesWithFilterOrderedByDateAdded(keyWord, city, status, minPrice, maxPrice, minArea, maxArea, minBaths, maxBaths, minBed, maxBed, HasGarage, Two_Stories, Laundry_Room, HasPool, HasGarden, HasElevator, HasBalcony, HasParking, HasCentralHeating, IsFurnished, ascending);
+            return Ok(properties);
+        }
+
+        [HttpGet("GetPropertiesWithFilter")]
+        public IActionResult GetPropertiesWithFilter(string? keyWord = null, string? city = null, Status? status = null,
+
+                                               decimal? maxPrice = null, double? maxArea = null,
+                                               int? maxBaths = null, int? maxBed = null,
+
+                                               bool HasGarage = false, bool Two_Stories = false, bool Laundry_Room = false,
+                                               bool HasPool = false, bool HasGarden = false, bool HasElevator = false,
+                                               bool HasBalcony = false, bool HasParking = false, bool HasCentralHeating = false, bool IsFurnished = false)
+        {
+
+            var properties = _propertyService.GetPropertiesWithFilter(keyWord, city, status, maxPrice, maxArea, maxBaths, maxBed, HasGarage, Two_Stories, Laundry_Room, HasPool, HasGarden, HasElevator, HasBalcony, HasParking, HasCentralHeating, IsFurnished);
             return Ok(properties);
         }
 

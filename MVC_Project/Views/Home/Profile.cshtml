@@ -1,0 +1,108 @@
+﻿@model MVC_Project.Models.User_Info
+
+@{
+    ViewData["Title"] = "My Profile";
+    ViewData["Page Header"] = "My Profile";
+}
+
+<!-- Profile Form (Merged Content) -->
+<div class="container" style="top: 90px; margin-top: 20px; margin-bottom: 20px;">
+    <div class="row">
+        <!-- Sidebar Section -->
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="dashboard-nav-2" style="min-height: 695px;">
+                <!-- Header -->
+                <div class="header text-center py-4">
+                    <h2>@Model.F_Name</h2> <!-- Display logged-in user's name -->
+                </div>
+
+                <!-- Profile Photo Section -->
+                <div class="profile-photo">
+                    <img src="@Model.ProfilePicture" alt="avatar" class="img-fluid">
+                    <div class="change-photo-btn">
+                        <label class="btn btn-secondary btn-sm">
+                            <i class="fas fa-upload"></i> Upload Photo
+                            <input type="file" class="d-none">
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Sidebar Links -->
+                <div class="detail clearfix">
+                    <ul id="sidebar-links">
+                        <li data-partial-url="/Home/ProfilePartial" class="active">
+                            <a href="javascript:void(0)" class="profile-link">
+                                <i class="fa fa-user"></i> My Profile
+                            </a>
+                        </li>
+                        <li data-partial-url="/Home/MyPropertiesPartial">
+                            <a href="javascript:void(0)" class="profile-link">
+                                <i class="fa fa-building"></i> My Property
+                            </a>
+                        </li>
+                        <li data-partial-url="/Home/FavoritedPropertiesPartial">
+                            <a href="javascript:void(0)" class="profile-link">
+                                <i class="fa fa-heart"></i> Favorited Property
+                            </a>
+                        </li>
+                        <li data-partial-url="/Home/MassagesPartial">
+                            <a href="javascript:void(0)" class="profile-link">
+                                <i class="fa fa-envelope me-1"></i> Messages
+                            </a>
+                        </li>
+                        <li data-partial-url="/Home/SubmitPropertyPartial">
+                            <a href="javascript:void(0)" class="profile-link">
+                                <i class="fa fa-plus"></i> Submit Property
+                            </a>
+                        </li>
+                        <li data-partial-url="/Home/ChangePasswordPartial">
+                            <a href="javascript:void(0)" class="profile-link">
+                                <i class="fa fa-lock"></i> Change Password
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Account/Logout">
+                                <i class="fa fa-sign-out"></i> Log Out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="col-lg-8 col-md-12 col-sm-12">
+            <div class="dashboard-content">
+                <div class="dashboard-list" id="content">
+                    <!-- سيتم تحميل الصفحة الافتراضية هنا -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // تحميل صفحة My Profile بشكل افتراضي عند فتح الصفحة لأول مرة
+            $('#content').load("/Home/ProfilePartial");
+
+            // عند الضغط على أي رابط في القائمة الجانبية
+            $('#sidebar-links li a').click(function (e) {
+                e.preventDefault(); // منع إعادة التوجيه الافتراضية
+
+                // إزالة الـ "active" من جميع الـ <li>
+                $('#sidebar-links li').removeClass('active');
+
+                // إضافة "active" للـ <li> المحددة
+                $(this).closest('li').addClass('active');
+
+                // تحميل الـ partial view إذا كان الـ URL موجوداً في الـ data attribute
+                var partialUrl = $(this).closest('li').data('partial-url');
+                if (partialUrl) {
+                    $('#content').load(partialUrl);
+                }
+            });
+        });
+    </script>
+}

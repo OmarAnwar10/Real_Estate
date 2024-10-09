@@ -1,0 +1,236 @@
+﻿@model MVC_Project.ViewModel.PropertyViewModel
+
+@{
+    ViewData["Title"] = "Properties";
+    ViewData["PageHeader"] = "Property List";
+}
+
+<div class="properties-area recent-property" style="background-color: #FFF; margin-top: 20px; margin-bottom: 20px;">
+    <div class="container">
+        <div class="row">
+            <!-- Properties List -->
+            <div class="col-md-9 padding-top-40 properties-page">
+                <!-- Filters and Sorting -->
+                <div class="row mb-4">
+                    <div class="col-12 d-flex justify-content-between align-items-center mb-3">
+                        <div class="d-flex align-items-center">
+                            <!-- Sorting Options -->
+                            <div class="me-3">
+                                <ul class="list-unstyled d-flex mb-0">
+                                    <li class="me-2">
+                                        <a href="#" class="text-decoration-none" data-orderby="property_date" data-order="ASC">
+                                            Property Date <i class="fa fa-sort-amount-asc"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none" data-orderby="property_price" data-order="DESC">
+                                            Property Price <i class="fa fa-sort-numeric-desc"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Items Per Page -->
+                            <div class="me-3">
+                                <label for="items_per_page" class="mb-0"><b>Properties per page:</b></label>
+                                <select id="items_per_page" name="per_page" class="form-select form-select-sm">
+                                    <option value="3">3</option>
+                                    <option value="6">6</option>
+                                    <option selected value="9">9</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Layout Switcher -->
+                        <div>
+                            <a class="btn btn-outline-primary btn-sm me-2" href="#" title="List View">
+                                <i class="fa fa-th-list"></i>
+                            </a>
+                            <a class="btn btn-primary btn-sm" href="#" title="Grid View">
+                                <i class="fa fa-th"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="properties">
+                    <!-- Partial View for Property List will be loaded here -->
+                    <div class="row">
+                        @foreach (var property in Model.Properties)
+                        {
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card property-item">
+                                    <img src="@property.Image" class="card-img-top" alt="Property Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">@property.Title</h5>
+                                        <p class="card-text">@property.Bedrooms Beds | @property.Bathrooms Baths | @property.Area sq ft</p>
+                                        <p class="card-text">$@property.Price</p>
+                                        <a asp-controller="Properties" asp-action="Details" asp-route-id="@property.Id" class="btn btn-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="card card-body">
+                    <!-- Search Filters -->
+                    <form class="row g-3" id="propertyFilterForm">
+                        <!-- Keyword Filter -->
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="Keyword" placeholder="Keyword">
+                        </div>
+                        <!-- City Filter -->
+                        <div class="col-12">
+                            <select class="form-select" id="City" aria-label="Select your city">
+                                @if (Model.Cites != null && Model.Cites.Any())
+                                {
+                                    <option selected value="All">All Cities</option>
+                                    foreach (var item in Model.Cites)
+                                    {
+                                        <option value="@item.Name">@item.Name</option>
+                                    }
+                                }
+                                else
+                                {
+                                    <option selected>No cities available</option>
+                                }
+                            </select>
+                        </div>
+                        <!-- Status Filter -->
+                        <div class="col-12">
+                            <select class="form-select" id="Status" aria-label="Property Status">
+                                <option selected value=0>For All</option>
+                                <option value=1>For Rent</option>
+                                <option value=2>For Sale</option>
+                            </select>
+                        </div>
+                        <!-- Price Range Filter -->
+                        <div class="col-12">
+                            <label for="priceRange" class="form-label">
+                                Price Range:
+                                <span id="PriceMin">@ViewData["MinPrice"]</span> -
+                                <span id="PriceMax">@ViewData["MaxPrice"]</span>
+                            </label>
+                            <input type="range" class="form-range" id="PriceRange" min="@ViewData["MinPrice"]" max="@ViewData["MaxPrice"]" oninput="updatePriceValue(this.value)">
+                            <span>Selected: <span id="priceValue">@ViewData["MaxPrice"]</span></span>
+                        </div>
+                        <!-- Area Size Filter -->
+                        <div class="col-12">
+                            <label for="areaSize" class="form-label">
+                                Area Size (sq ft):
+                                <span id="AreaMin">@ViewData["MinArea"]</span> -
+                                <span id="AreaMax">@ViewData["MaxArea"]</span>
+                            </label>
+                            <input type="range" class="form-range" id="AreaSize" min="@ViewData["MinArea"]" max="@ViewData["MaxArea"]" oninput="updateAreaValue(this.value)">
+                            <span>Selected: <span id="areaValue">@ViewData["MaxArea"]</span></span>
+                        </div>
+                        <!-- Bedrooms and Bathrooms Filters -->
+                        <div class="col-12">
+                            <input type="number" class="form-control" id="Bedrooms" placeholder="Beds">
+                        </div>
+                        <div class="col-12">
+                            <input type="number" class="form-control" id="Bathrooms" placeholder="Baths">
+                        </div>
+                        <!-- Additional Filters -->
+                        <div class="col-12">
+                            <!-- Other filters like HasGarage, HasElevator, etc. -->
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="HasElevator">
+                                <label class="form-check-label" for="HasElevator">Elevator</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="IsFurnished">
+                                <label class="form-check-label" for="IsFurnished">Furnished</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="HasGarage">
+                                <label class="form-check-label" for="HasGarage">Garage</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="HasParking">
+                                <label class="form-check-label" for="HasParking">Parking</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="HasGarden">
+                                <label class="form-check-label" for="HasGarden">Garden</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="HasBalcony">
+                                <label class="form-check-label" for="HasBalcony">Balcony</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="TwoStories">
+                                <label class="form-check-label" for="TwoStories">Two Stories</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="LaundryRoom">
+                                <label class="form-check-label" for="LaundryRoom">Laundry Room</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="HasPool">
+                                <label class="form-check-label" for="HasPool">Swimming Pool</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="CentralHeating">
+                                <label class="form-check-label" for="CentralHeating">Central Heating</label>
+                            </div>
+                        </div>
+                        <!-- Search Button -->
+                        <div class="col-12">
+                            <button type="button" class="btn btn-primary w-100" onclick="searchProperties()">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function updatePriceValue(value) {
+            document.getElementById('priceValue').innerText = value;
+        }
+
+        function updateAreaValue(value) {
+            document.getElementById('areaValue').innerText = value;
+        }
+
+        async function searchProperties() {
+            // Gather filter values
+            var keyword = document.getElementById('Keyword').value;
+            var city = document.getElementById('City').value;
+            var status = document.getElementById('Status').value;
+            var priceRange = document.getElementById('PriceRange').value;
+            var areaSize = document.getElementById('AreaSize').value;
+            var bedrooms = document.getElementById('Bedrooms').value;
+            var bathrooms = document.getElementById('Bathrooms').value;
+
+            var hasElevator = document.getElementById('HasElevator').checked;
+            var isFurnished = document.getElementById('IsFurnished').checked;
+            var hasGarage = document.getElementById('HasGarage').checked;
+            var hasParking = document.getElementById('HasParking').checked;
+            var hasGarden = document.getElementById('HasGarden').checked;
+            var hasBalcony = document.getElementById('HasBalcony').checked;
+            var twoStories = document.getElementById('TwoStories').checked;
+            var laundryRoom = document.getElementById('LaundryRoom').checked;
+            var hasPool = document.getElementById('HasPool').checked;
+            var centralHeating = document.getElementById('CentralHeating').checked;
+
+            const filterResultDiv = document.getElementById("properties");
+
+            // Send data to the server via AJAX
+            const url = `/Home/PropertyiesPartial?keyword=${keyword}&city=${city}&status=${status}&maxPrice=${priceRange}&maxArea=${areaSize}&maxBaths=${bathrooms}&maxBed=${bedrooms}&HasGarage=${hasGarage}&Two_Stories=${twoStories}&Laundry_Room=${laundryRoom}&HasPool=${hasPool}&HasGarden=${hasGarden}&HasElevator=${hasElevator}&HasBalcony=${hasBalcony}&HasParking=${hasParking}&HasCentralHeating=${centralHeating}&IsFurnished=${isFurnished}`;
+            const response = await fetch(url);
+            const result = await response.text();
+
+            filterResultDiv.innerHTML = result;
+        }
+    </script>
+}
+

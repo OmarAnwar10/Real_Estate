@@ -47,7 +47,25 @@ namespace _Services.EntityMapping
                 DateAdded = p.DateAdded,
                 Status = p.Status,
                 Amenities = AmenitiesMapping.MapToAmenitiesOut(p.Amenities),
-                Image = p.Images.Select(i => i.Url).First()?.ToString() ?? "No Image"
+                Image = p.Images.Select(i => i.Url).FirstOrDefault()?.ToString() ?? "No Image"
+            });
+
+        }
+
+        public static IEnumerable<Properties_List> MapToPropertyList(IEnumerable<Property> properties)
+        {
+
+            return properties.Select(p => new Properties_List
+            {
+                Id = p.Id,
+                Title = p.Title,
+                Price = p.Price,
+                City = p.City.Name,
+                Area = p.Area,
+                Bedrooms = p.Bedrooms,
+                Bathrooms = p.Bathrooms,
+                Status = p.Status,
+                Image = p.Images.Select(i => i.Url).FirstOrDefault()?.ToString() ?? "No Image"
             });
 
         }
@@ -65,7 +83,7 @@ namespace _Services.EntityMapping
                 Description = property.Description,
                 Price = property.Price,
                 Location = property.Location,
-                City = property.City.Name,
+                City = property.City?.Name??"no city",
                 Area = property.Area,
                 PropertyType = property.PropertyType,
                 Bedrooms = property.Bedrooms,

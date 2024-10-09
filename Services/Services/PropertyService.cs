@@ -38,6 +38,21 @@ namespace Application.Services
             }
         }
 
+        public IEnumerable<Properties_List> GetPropertyList()
+        {
+            try
+            {
+                var properties = _unitOfWork.Property.GetAll();
+
+                return PropertyMapping.MapToPropertyList(properties);
+            }
+            catch (Exception ex)
+            {
+                // Log exception here
+                throw new ApplicationException("An error occurred while retrieving properties.", ex);
+            }
+        }
+
         public Property_AllInfo GetPropertyById(int Id)
         {
             try
@@ -57,22 +72,77 @@ namespace Application.Services
         }
 
 
+        //public void CreateProperty(Property_Create _property)
+        //{
+        //    try
+        //    {
+        //        ValidateProperty(_property);
+
+        //        _cityService.CreateCity(new City_Add { Name =_property.City });
+
+        //        int cityId =  _cityService.GetCityByName(_property.City).Id;
+
+        //        _amenitiesService.CreateAmenities(_property.Amenities);
+
+        //        var AllAmenities = _unitOfWork.Amenities.GetAll().ToList();
+
+        //        int amenitiesId = 0;
+        //        foreach (var amenity in AllAmenities)
+        //        {
+        //            if (
+        //                (_property.Amenities.HasPool == amenity.HasPool) && (_property.Amenities.HasBalcony == amenity.HasBalcony) &&
+        //                (_property.Amenities.HasParking == amenity.HasParking) && (_property.Amenities.Two_Stories == amenity.Two_Stories) &&
+        //                (_property.Amenities.HasGarage == amenity.HasGarage) && (_property.Amenities.HasBalcony == amenity.HasBalcony) &&
+        //                (_property.Amenities.HasCentralHeating == amenity.HasCentralHeating) && (_property.Amenities.HasElevator == amenity.HasElevator) &&
+        //                (_property.Amenities.IsFurnished == amenity.IsFurnished)
+        //                )
+        //            {
+        //                amenitiesId = amenity.Id;
+        //                break;
+        //            }
+        //        }
+
+        //        var property = PropertyMapping.MapToProperty(_property, amenitiesId, cityId);
+
+        //        _unitOfWork.Property.Insert(property);
+        //        _unitOfWork.Save();
+
+        //        int propertyId = GetPropertyIdByTitle(_property.Title, _property.OwnerId);
+
+        //        foreach (var image in _property.Images)
+        //        {
+        //            _propertyImageService.CreatePropertyImage(propertyId, image);
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Log exception here
+        //        throw new ApplicationException("An error occurred while creating the property.", ex);
+        //    }
+        //}
+
         public void CreateProperty(Property_Create _property)
         {
             try
             {
                 ValidateProperty(_property);
 
-                _cityService.CreateCity(new City_Add { Name =_property.City });
+                // تحقق من وجود المدينة
+                var existingCity = _cityService.GetCityByName(_property.City);
+                if (existingCity == null)
+                {
+                    _cityService.CreateCity(new City_Add { Name = _property.City });
+                    existingCity = _cityService.GetCityByName(_property.City);
+                }
 
-                int cityId =  _cityService.GetCityByName(_property.City).Id;
+                int cityId = existingCity.Id;
 
+                // التعامل مع Amenities
                 _amenitiesService.CreateAmenities(_property.Amenities);
 
-                var AllAmenities = _unitOfWork.Amenities.GetAll().ToList();
-
+                var allAmenities = _unitOfWork.Amenities.GetAll().ToList();
                 int amenitiesId = 0;
-                foreach (var amenity in AllAmenities)
+                foreach (var amenity in allAmenities)
                 {
                     if (
                         (_property.Amenities.HasPool == amenity.HasPool) && (_property.Amenities.HasBalcony == amenity.HasBalcony) &&
@@ -94,6 +164,7 @@ namespace Application.Services
 
                 int propertyId = GetPropertyIdByTitle(_property.Title, _property.OwnerId);
 
+                // إضافة الصور
                 foreach (var image in _property.Images)
                 {
                     _propertyImageService.CreatePropertyImage(propertyId, image);
@@ -105,6 +176,7 @@ namespace Application.Services
                 throw new ApplicationException("An error occurred while creating the property.", ex);
             }
         }
+
 
         public void UpdateProperty(int id, Property_Update _property)
         {
@@ -199,7 +271,7 @@ namespace Application.Services
             }
         }
 
-        public IEnumerable<Property_GetAll_Func> GetPropertiesWithFilterOrderedByPrice(string? keyWord = null, string? city = null, Status status = Status.buy,
+        public IEnumerable<Property_GetAll_Func> GetPropertiesWithFilterOrderedByPrice(string? keyWord = null, string? city = null, Status? status = null,
 
                                                decimal? minPrice = null, decimal? maxPrice = null,
                                                double? minArea = null, double? maxArea = null,
@@ -224,7 +296,7 @@ namespace Application.Services
             }
         }
 
-        public IEnumerable<Property_GetAll_Func> GetPropertiesWithFilterOrderedByDateAdded(string? keyWord = null, string? city = null, Status status = Status.buy,
+        public IEnumerable<Property_GetAll_Func> GetPropertiesWithFilterOrderedByDateAdded(string? keyWord = null, string? city = null, Status? status = null,
 
                                                decimal? minPrice = null, decimal? maxPrice = null,
                                                double? minArea = null, double? maxArea = null,
@@ -248,6 +320,29 @@ namespace Application.Services
                 throw new ApplicationException("An error occurred while retrieving properties.", ex);
             }
         }
+
+        public IEnumerable<Properties_List> GetPropertiesWithFilter(string? keyWord = null, string? city = null, Status? status = null,
+
+                                               decimal? maxPrice = null, double? maxArea = null,
+                                               int? maxBaths = null, int? maxBed = null,
+
+                                               bool HasGarage = false, bool Two_Stories = false, bool Laundry_Room = false,
+                                               bool HasPool = false, bool HasGarden = false, bool HasElevator = false,
+                                               bool HasBalcony = false, bool HasParking = false, bool HasCentralHeating = false, bool IsFurnished = false)
+        {
+
+            try
+            {
+                var properties = _unitOfWork.Property.GetPropertiesWithFilter(keyWord, city, status, null , maxPrice, null, maxArea, null, maxBaths, null, maxBed, HasGarage, Two_Stories, Laundry_Room, HasPool, HasGarden, HasElevator, HasBalcony, HasParking, HasCentralHeating, IsFurnished);
+                return PropertyMapping.MapToPropertyList(properties);
+            }
+            catch (Exception ex)
+            {
+                // Log exception here
+                throw new ApplicationException("An error occurred while retrieving properties.", ex);
+            }
+        }
+        
 
         public int GetPropertyIdByTitle(string title, int OwnerId)
         {

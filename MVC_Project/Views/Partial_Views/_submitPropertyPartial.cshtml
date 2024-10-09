@@ -1,0 +1,161 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!-- Property Information -->
+<h4 class="mb-4">Basic Information</h4>
+<form>
+    <div class="row">
+        <div class="col-lg-6 mb-3">
+            <label for="property-title">Property Title</label>
+            <input type="text" id="property-title" class="form-control"
+                   placeholder="Property Title">
+        </div>
+        <div class="col-lg-6 mb-3">
+            <label for="status">Status</label>
+            <select id="status" class="form-select">
+                <option>For Sale</option>
+                <option>For Rent</option>
+            </select>
+        </div>
+        <div class="col-lg-6 mb-3">
+            <label for="price">Price (USD)</label>
+            <input type="text" id="price" class="form-control" placeholder="Price">
+        </div>
+        <div class="col-lg-6 mb-3">
+            <label for="area">Area (SqFt)</label>
+            <input type="text" id="area" class="form-control" placeholder="Area">
+        </div>
+        <div class="col-lg-6 mb-3">
+            <label for="rooms">Rooms</label>
+            <select id="rooms" class="form-select">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="col-lg-6 mb-3">
+            <label for="bathrooms">Bathrooms</label>
+            <select id="bathrooms" class="form-select">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="col-lg-6 mb-3">
+            <label for="year-built">Year Built</label>
+            <input type="text" id="year-built" class="form-control"
+                   placeholder="Year Built">
+        </div>
+        <div class="mb-3">
+            <label for="property-description" class="form-label">Description</label>
+            <textarea class="form-control" id="property-description" rows="3"
+                      placeholder="Enter property description" required></textarea>
+        </div>
+    </div>
+
+    <!-- Property Location -->
+    <h4 class="my-4">Location</h4>
+    <div class="row">
+        <div class="col-lg-6 mb-3">
+            <label for="address">Address</label>
+            <input type="text" id="address" class="form-control" placeholder="Address">
+        </div>
+        <div class="col-lg-6 mb-3">
+            <label for="state">State</label>
+            <select id="state" class="form-select">
+                <option>Choose State</option>
+                <option>Alabama</option>
+                <option>California</option>
+                <option>Florida</option>
+            </select>
+        </div>
+        <div class="col-lg-6 mb-3">
+            <label for="city">City</label>
+            <input type="text" id="city" class="form-control" placeholder="City">
+        </div>
+    </div>
+
+    <!-- Property Images -->
+    <h4 class="my-4">Images</h4>
+    <div class="mb-3">
+        <label for="property-images" class="form-label">Upload Property Images</label>
+        <input class="form-control" type="file" id="property-images" multiple>
+    </div>
+
+    <!-- Amenities -->
+    <h4 class="my-4">Amenities</h4>
+    <div class="row">
+        <div class="col-lg-4 mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="air-condition">
+                <label class="form-check-label" for="air-condition">Garage</label>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="free-parking">
+                <label class="form-check-label" for="free-parking">Two Stories</label>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="laundry-room">
+                <label class="form-check-label" for="laundry-room">Laundry Room</label>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="pool">
+                <label class="form-check-label" for="pool">Swimming Pool</label>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gym">
+                <label class="form-check-label" for="gym">Garden</label>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gym">
+                <label class="form-check-label" for="gym">Elevator</label>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gym">
+                <label class="form-check-label" for="gym">Balcony</label>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gym">
+                <label class="form-check-label" for="gym">Parking</label>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gym">
+                <label class="form-check-label" for="gym">Central Heating</label>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gym">
+                <label class="form-check-label" for="gym">Furnished</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="row">
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary btn-lg">Submit Property</button>
+        </div>
+    </div>
+</form>

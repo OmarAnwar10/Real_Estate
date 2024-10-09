@@ -6,7 +6,7 @@ namespace Application.DataAccessContracts
     {
         //public IEnumerable<Property> GetPropertiesByPrice(decimal minPrice, decimal maxPrice);
 
-        IEnumerable<Property> GetPropertiesWithFilter(string? keyWord = null, string? city = null, Status status = Status.buy,
+        IEnumerable<Property> GetPropertiesWithFilter(string? keyWord = null, string? city = null, Status? status = null,
 
                                                        decimal? minPrice = null, decimal? maxPrice = null,
                                                        double? minArea = null, double? maxArea = null,
@@ -16,7 +16,7 @@ namespace Application.DataAccessContracts
                                                        bool HasPool = false, bool HasGarden = false, bool HasElevator = false,
                                                        bool HasBalcony = false, bool HasParking = false, bool HasCentralHeating = false, bool IsFurnished = false);
 
-        IEnumerable<Property> GetPropertiesWithFilterOrderedByPrice(string? keyWord = null, string? city = null, Status status = Status.buy,
+        IEnumerable<Property> GetPropertiesWithFilterOrderedByPrice(string? keyWord = null, string? city = null, Status? status = null,
 
                                                decimal? minPrice = null, decimal? maxPrice = null,
                                                double? minArea = null, double? maxArea = null,
@@ -28,7 +28,7 @@ namespace Application.DataAccessContracts
 
                                                bool ascending = true);
 
-        IEnumerable<Property> GetPropertiesWithFilterOrderedByDateAdded(string? keyWord = null, string? city = null, Status status = Status.buy,
+        IEnumerable<Property> GetPropertiesWithFilterOrderedByDateAdded(string? keyWord = null, string? city = null, Status? status = null,
 
                                                decimal? minPrice = null, decimal? maxPrice = null,
                                                double? minArea = null, double? maxArea = null,

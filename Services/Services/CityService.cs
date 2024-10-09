@@ -75,22 +75,39 @@ namespace _Services.Services
         {
             try
             {
-                if (_unitOfWork.City.GetCityByName(_city.Name) != null)
-                    throw new Exception("City already exists");
+                // تحقق مما إذا كانت المدينة موجودة بالفعل
+                var existingCity = _unitOfWork.City.GetCityByName(_city.Name);
+                if (existingCity != null)
+                {
+                    throw new InvalidOperationException("City already exists.");
+                }
 
-                if (string.IsNullOrEmpty(_city.Name))
-                    throw new Exception("Invalid Name");
+                // تحقق من صحة الاسم المدخل
+                if (string.IsNullOrEmpty(_city.Name) || _city.Name.Length < 3)
+                {
+                    throw new ArgumentException("Invalid city name. City name must be at least 3 characters long.");
+                }
+
+                // قم بإضافة المدينة الجديدة
                 City city = CityMapping.MapCityAddToCity(_city);
                 _unitOfWork.City.Insert(city);
                 _unitOfWork.Save();
             }
+            catch (InvalidOperationException ex)
+            {
+                throw new ApplicationException("The city already exists in the database.", ex);
+            }
+            catch (ArgumentException ex)
+            {
+                throw new ApplicationException("The provided city name is invalid.", ex);
+            }
             catch (Exception ex)
             {
-                throw new ApplicationException("An error occurred while creating city.", ex);
+                throw new ApplicationException("An unexpected error occurred while creating the city.", ex);
             }
-            
         }
-        
+
+
         public void DeleteCity(int id)
         {
             try
